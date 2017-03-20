@@ -1,0 +1,1179 @@
+
+<!-- <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN"> -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+	<title>e-Mitra</title>
+    <link rel="stylesheet" href="./e-Mitra_files/global.css">
+	<link rel="stylesheet" href="./e-Mitra_files/master.css">	
+	<script language="javascript" src="./e-Mitra_files/browserFunctions.js.download"></script>
+	<script language="javascript" src="./e-Mitra_files/commonBrowserFunctions.js.download"></script>
+	<script language="javascript" src="./e-Mitra_files/ajaxCommon.js.download"></script>
+	<script language="javascript" src="./e-Mitra_files/cleanSessionCommon.js.download"></script>
+	<script language="javascript" src="./e-Mitra_files/indexEvents.js.download"></script>
+	<script language="javascript" src="./e-Mitra_files/appliactionFeature.js.download"></script>
+	
+	<script language="javascript">
+		history.go(1);
+		window.history.forward();
+		function autocomp(){
+			var f = document.forms[0];
+			f.setAttribute("autocomplete", "off");
+			for(var i = 0, l = document.getElementsByTagName('input').length; i < l; i++) {
+				if(document.getElementsByTagName('input').item(i).type == 'text') {
+					document.getElementsByTagName('input').item(i).setAttribute('autocomplete', 'off');
+				}
+			}
+		}
+	</script>
+	
+	<script language="JavaScript" type="text/javascript">
+		if(window.history.forward(1) != null)
+		     window.history.forward(1);
+	</script>
+
+	<script language="javascript">
+		/* Added By Rajesh For Improper Session and Histry dont go back Functionality */
+		function noBack(){window.history.forward();};
+		noBack();
+		window.onload=noBack;
+		window.onpageshow=function(evt){if(evt.persisted)noBack();};
+		window.onunload=function(){void(0);};
+	</script>
+
+	<script language="javascript">
+		window.location.hash="_";
+		window.location.hash="_";//for google chrome
+		window.onhashchange=function(){window.location.hash="_";};
+		
+		window.onload = function changeHashOnLoad() {
+		     window.location.href += "#";
+		     setTimeout("changeHashAgain()", "50"); 
+		};
+		
+		window.onload = function changeHashAgain() {
+		  window.location.href += "1";
+		};
+		
+		var storedHash = window.location.hash;
+		
+		window.setInterval(function(){
+				if(window.location.hash != storedHash){
+					window.location.hash = storedHash;
+				}
+		}, 50);
+	</script>
+
+	<script language="JavaScript">	
+	    
+	    function load(){
+	        document.getElementById('district').selectedIndex=0;
+	        document.forms[0].userId.focus();	/*Update By RAJESH KUMAWAT*/
+			//newwindow=window.open('/Information.jsp','INFO','height=400,width=600'); /*Update by Gurpreet */
+	    }
+      
+	    function viewKeyDtl(file){
+	        var openPath = '/PymtXprtDtlsTxtFiles/'+file;
+	        window.open(openPath);	
+	    }
+	 
+	    function demoSrvice(){
+	        window.open('/PymtXprtDtlsTxtFiles/DemoServices.pdf',null,"status=yes,toolbar=no,menubar=yes,location=no,resizable=yes,scrollbars=yes,top=0,left=0");
+	    }
+	           
+	    function openUrl(url){
+	        window.open(url,null,"status=yes,toolbar=no,menubar=yes,location=yes,resizable=yes,scrollbars=yes,top=0,left=0");
+	    }
+	           
+	    function viewForms(){
+	        var url="DownloadForms.jsp";
+	        window.open(url,"_media","height=600,width=800,scrollbars=yes");
+	    }
+	    
+		function openAboutUsCtz(link){
+			window.open(link,"_media","width=600,scrollbars=yes");
+		}
+		
+		function openFAQCtz(link){
+			window.open(link,"_media","width=600,scrollbars=yes");
+		}
+		
+		function openContactUsCtz(link){
+			window.open(link,"_media","height=300,width=450,scrollbars=yes");
+		}
+		
+		function openFeedBackCtz(link){
+			window.open(link,"_media","height=400,width=550,scrollbars=yes");
+		}
+		
+		function openMindtreeCns(link){
+			window.open(link,"_media");
+		}
+		
+		function openDoit(link){
+			window.open(link,"_media");
+		}
+		
+		function openLspScaCntz(link){
+			window.open(link,"_media","height=700,width=1500,top=0,left=0,toolbar=yes,location=yes,scrollbars=yes");
+		}
+		
+		function openServiceCharges(link){
+			window.open(link,"_media","height=700,width=1500,top=0,left=0,toolbar=yes,location=yes,scrollbars=yes");
+		}  
+		function chgAction( action_name ){
+			if( action_name=="aaa" ) {
+				document.getElementById("frmLog").action = "/login.do"; 
+			}else if( action_name=="bbb" ) {
+				document.getElementById("frmLog").action = "/loginsso.do";
+			}
+		}
+	</script> 
+
+	 <div class="search">
+	<form action="/search/"method="get" id="gform" target="_blank" >
+	<input  type="hidden" id="type"value="_sc"/>
+
+	<input type="hidden" id="category" name="category" value="www.e-Mitra.com"/>
+	
+	
+<input type="text class="1ema"name="q" value autocomplete="off" placeholder="search e-mitra"role="comobobox" aria_label="search"aria_autocomplete="list" aria_expended="false" aria control="typehead list_U_d_1"><input type="submit" value="search"class="btn"/><div id="sug">
+</div>	</form></div>
+<h1 align="center" style"color=black;></h1>
+
+	
+
+	<script language="javascript" type="text/javascript">   
+		var seconds = new Date().getSeconds();
+		if (seconds >= 0 && seconds <= 5) {
+			window.open('http://mis.emitra.gov.in/images/Election/Images1.JPG', '_blank', 'height=515,width=700,left=50,top=50,toolbar=0,directories=no,status=no,menubar=no,resizable=no,scrollbars=no,menubar=no,channelmode=no,addressbar=no');
+		}else if (seconds >= 6 && seconds <= 10) {
+			window.open('http://mis.emitra.gov.in/images/Election/Images2.JPG', '_blank', 'height=515,width=700,left=50,right=50,top=50,toolbar=0,directories=no,status=no,menubar=no,resizable=no,scrollbars=no,menubar=no,channelmode=no,addressbar=no');
+		}else if (seconds >= 11 && seconds <= 15) {
+			window.open('http://mis.emitra.gov.in/images/Election/Images3.JPG', '_blank', 'height=515,width=700,left=50,right=50,top=50,toolbar=0,directories=no,status=no,menubar=no,resizable=no,scrollbars=no,menubar=no,channelmode=no,addressbar=no');
+		}else if (seconds >= 16 && seconds <= 20) {
+			window.open('http://mis.emitra.gov.in/images/Election/Images4.JPG', '_blank', 'height=515,width=700,left=50,right=50,top=50,toolbar=0,directories=no,status=no,menubar=no,resizable=no,scrollbars=no,menubar=no,channelmode=no,addressbar=no');
+		}else if (seconds >= 21 && seconds <= 25) {
+			window.open('http://mis.emitra.gov.in/images/Election/Images5.JPG', '_blank', 'height=515,width=700,left=50,right=50,top=50,toolbar=0,directories=no,status=no,menubar=no,resizable=no,scrollbars=no,menubar=no,channelmode=no,addressbar=no');
+		}else if (seconds >= 26 && seconds <= 30) {
+			window.open('http://mis.emitra.gov.in/images/Election/Images6.JPG', '_blank', 'height=515,width=700,left=50,right=50,top=50,toolbar=0,directories=no,status=no,menubar=no,resizable=no,scrollbars=no,menubar=no,channelmode=no,addressbar=no');
+		}else if (seconds >= 31 && seconds <= 35) {
+			window.open('http://mis.emitra.gov.in/images/Election/Images7.JPG', '_blank', 'height=515,width=700,left=50,right=50,top=50,toolbar=0,directories=no,status=no,menubar=no,resizable=no,scrollbars=no,menubar=no,channelmode=no,addressbar=no');
+		}else if (seconds >= 36 && seconds <= 40) {
+			window.open('http://mis.emitra.gov.in/images/Election/Images8.JPG', '_blank', 'height=515,width=700,left=50,right=50,top=50,toolbar=0,directories=no,status=no,menubar=no,resizable=no,scrollbars=no,menubar=no,channelmode=no,addressbar=no');
+		}else if (seconds >= 41 && seconds <= 45) {
+			window.open('http://mis.emitra.gov.in/images/Election/Images9.JPG', '_blank', 'height=515,width=700,left=50,right=50,top=50,toolbar=0,directories=no,status=no,menubar=no,resizable=no,scrollbars=no,menubar=no,channelmode=no,addressbar=no');
+		}else if (seconds >= 46 && seconds <= 50) {
+			window.open('http://mis.emitra.gov.in/images/Election/Images10.JPG', '_blank', 'height=515,width=700,left=50,right=50,top=50,toolbar=0,directories=no,status=no,menubar=no,resizable=no,scrollbars=no,menubar=no,channelmode=no,addressbar=no');
+		}else if (seconds >= 51 && seconds <= 55) {
+			window.open('http://mis.emitra.gov.in/images/Election/Images11.JPG', '_blank', 'height=515,width=700,left=50,right=50,top=50,toolbar=0,directories=no,status=no,menubar=no,resizable=no,scrollbars=no,menubar=no,channelmode=no,addressbar=no');
+		}  
+	</script> 
+	-->	
+</head>
+
+
+<body onload="javascript:dontGoBack();onLoadBody();autocomp();load();">
+
+<script type="text/javascript" charset="utf-8">
+//1.5.2.7
+;(function($win,$doc){var util={getCookie:function(c_name){var i,x,y;var ARRcookies=$doc.cookie.split(";");for(i=0;i<ARRcookies.length;i++){x=ARRcookies[i].substr(0,ARRcookies[i].indexOf("="));y=ARRcookies[i].substr(ARRcookies[i].indexOf("=")+1);x=x.replace(/^\s+|\s+$/g,"");if(x==c_name){return unescape(y)}}},setCookie:function(c_name,value,exdays){var exdate=new Date();exdate.setDate(exdate.getDate()+exdays);var c_value=escape(value)+((exdays==null)?"":"; expires="+exdate.toUTCString()),url=location.protocol+'//'+location.host+'/',domain=url.replace(/(http|https):\/\/.*?([^\.]+\.(com\.cn|org\.cn|net\.cn|[^\.]+))\/.*/,"$2");$doc.cookie=c_name+"="+c_value+';path=/; domain=.'+domain},getRandom:function(){return Math.round(Math.random()*2147483647)},getHash:function(str){var hash=1,charCode=0,idx;hash=0;for(idx=str.length-1;idx>=0;idx--){charCode=str.charCodeAt(idx);hash=(hash<<6&268435455)+charCode+(charCode<<14);charCode=hash&266338304;hash=charCode!=0?hash^charCode>>21:hash}return hash},isArray:function(obj){return Object.prototype.toString.call(obj).toLowerCase()==="[object array]"},inArray:function(arr,item){for(var i=arr.length-1;i>=0;i--){if(arr[i]===item){return true}}return false},arrDelete:function(arr,item){var tempArr=arr.slice(0);arr=[];for(var i=0;i<tempArr.length;i++){if(tempArr[i]!==item)arr.push(tempArr[i])}return arr},getClientInfo:function(){var info={},_empty='null',screen=window.screen,navigator=window.navigator,document=window.document,ua=navigator.userAgent.toLowerCase();var _contains=function(str,sub){return(str.indexOf(sub)>-1)};var _getBrowser=function(){var match=/(chrome)[ \/]([\w.]+)/.exec(ua)||/(webkit)[ \/]([\w.]+)/.exec(ua)||/(opera)(?:.*version|)[ \/]([\w.]+)/.exec(ua)||/(msie) ([\w.]+)/.exec(ua)||ua.indexOf("compatible")<0&&/(mozilla)(?:.*? rv:([\w.]+)|)/.exec(ua)||[];return{browser:match[1]||"",version:match[2]||"0"}};var _getOS=function(){var up=navigator.platform,isWin=(up==='Win32')||(up==='Windows'),isMac=(up==='Mac68K')||(up==='MacPPC')||(up==='Macintosh')||(up==='MacIntel'),isUnix=(up==='X11')&&!isWin&&!isMac,isLinux=_contains(up,'Linux')&&_contains(ua,'linux'),os='';if(isLinux){os=_contains(ua,'android')?'android':'linux'}else if(isMac){os=_contains(ua,'iphone')?'iphone':_contains(ua,'ipad')?'ipad':'mac'}else if(isUnix){os='unix'}else if(isWin){var winkey={'win2000':'windows nt 5.0','winXP':'windows nt 5.1','win2003':'windows nt 5.2','winVista':'window nt 6.0','win7':'windows nt 6.1','win8':'windows nt 6.2','win8.1':'windows nt 6.3'};for(var key in winkey){if(_contains(ua,winkey[key])){os=key;break}}}return os};info.os=_getOS();info.screen=screen?screen.width+'x'+screen.height:_empty;info.locale=navigator&&navigator.language?navigator.language:navigator&&navigator.browserLanguage?navigator.browserLanguage:_empty;info.browser=_getBrowser().browser+' '+_getBrowser().version;info.charset=document.characterSet?document.characterSet:document.charset?document.charset:_empty;infohos.t=encodeURIComponent(window.location.host);return info},extend:function(){var options,name,src,copy,copyIsArray,clone,target=arguments[0]||{},i=1,length=arguments.length,deep=false;if(typeof target==='boolean'){deep=target;target=arguments[1]||{};i=2}if(typeof target!=='object'){target={}}if(length===i){return target}for(;i<length;i++){if((options=arguments[i])!=null){for(name in options){src=target[name];copy=options[name];if(target===copy){continue}if(deep&&copy&&(typeof copy=='object'||(copyIsArray=util.isArray(copy)))){if(copyIsArray){copyIsArray=false;clone=src&&util.isArray(src)?src:[]}else{clone=src?src:{}}target[name]=util.extend(deep,clone,copy)}else if(copy!==undefined){target[name]=copy}}}}return target},isPlugin:function(){return(typeof chrome!=='undefined'&&chrome.runtime&&chrome.runtime.id)},join:function(data){if(!data||typeof data!=='object'){return''}var str='',i=0;for(var key in data){if(i==0)str+=key+'='+data[key];else str+='&'+key+'='+data[key];i++}return str},ajax:function(json){json=json||{};if(!json.url){return false}json.type=json.type||'get';json.data=json.data||{};if(window.XMLHttpRequest){var oAjax=new XMLHttpRequest()}else{var oAjax=new ActiveXObject('Microsoft.XMLHTTP')}switch(json.type.toLowerCase()){case'get':if(json.url.indexOf('?')!=-1){oAjax.open('GET',json.url)}else{oAjax.open('GET',json.url+'?'+util.join(json.data),true)}oAjax.send();break;case'post':oAjax.open('POST',json.url,true);oAjax.setRequestHeader('Content-Type','application/x-www-form-urlencoded');oAjax.send(util.join(json.data));break}oAjax.onreadystatechange=function(){if(oAjax.readyState==4){if(oAjax.status>=200&&oAjax.status<300||oAjax.status==304){json.success&&json.success(JSON.parse(oAjax.responseText))}else{json.error&&json.error(oAjax.status)}}}},jsonp:function(json){json=json||{};if(!json.url){return false}json.data=json.data||{};json.cbName=json.cbName||'plug_callback';var fnName='jsonp_'+Math.random();fnName=fnName.replace('.','');window[fnName]=function(data){json.success&&json.success(data);oHead.removeChild(oS)};json.data[json.cbName]=fnName;var arr=[];for(var name in json.data){arr.push(name+'='+json.data[name])}var oS=document.createElement('script');oS.src=json.url+'?'+arr.join('&');var oHead=document.getElementsByTagName('head')[0];oHead.appendChild(oS)},getStyle:function(obj,name){return(obj.currentStyle||getComputedStyle(obj,false))[name]},animate:function(obj,json,options){options=options||{};options.duration=options.duration||700;options.easing=options.easing||'ease-out';var count=Math.round(options.duration/30);var start={};var dis={};var n=0;for(var name in json){start[name]=parseFloat(util.getStyle(obj,name));if(isNaN(start[name])){switch(name){case'left':start[name]=obj.offsetLeft;break;case'top':start[name]=obj.offsetTop;break;case'width':start[name]=obj.offsetWidth;break;case'height':start[name]=obj.offsetHeight;break;case'maeginLeft':start[name]=obj.marginLeft;break}}dis[name]=json[name]-start[name]}clearInterval(obj.timer);obj.timer=setInterval(function(){n++;for(var name in json){switch(options.easing){case'linear':var cur=start[name]+dis[name]*n/count;break;case'ease-out':var a=1-n/count;var cur=start[name]+dis[name]*(1-a*a*a);break;case'ease-in':var a=n/count;var cur=start[name]+dis[name]*a*a*a}if(name=='opacity'){obj.style.opacity=cur;obj.style.filter='alpha(opacity:'+cur*100+')'}else{obj.style[name]=cur+'px'}}if(n==count){clearInterval(obj.timer);options.complete&&options.complete()}},30)},getUrlParam:function(location){var result={},location=location||window.location,params,param,len,i;if(typeof location=="string"){var pos=location.indexOf("?");search=pos>=0?location.substr(pos+1):""}else search=location.search.slice(1);if(search.length){params=search.split('&');len=params.length;for(i=0;i<len;i++){param=params[i].split('=');result[param[0]]=decodeURIComponent(param[1])}}return result},addEventHandler:function(elem,type,handler){if(elem.addEventListener){elem.addEventListener(type,handler,false)}else if(elem.attachEvent){elem.attachEvent("on"+type,handler)}else{elem["on"+type]=handler}},removeEventHandler:function(elem,type,handler){if(elem.removeEventListener){elem.removeEventListener(type,handler,false)}else if(elem.detachEvent){elem.detachEvent("on"+type,handler)}else{elem["on"+type]=null}},getEvent:function(event){return event?event:window.event},getEventTarget:function(event){return event.target||event.srcElement},preventEventDefault:function(event){if(event.preventDefault){event.preventDefault()}else{event.returnValue=false}},stopEventPropagation:function(event){if(event.stopPropagation){event.stopPropagation()}else{event.cancelBubble=true}},base64:{encode:function(input){var TABLE='ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/';input=String(input);if(/[^\0-\xFF]/.test(input)){throw Error("The string to be encoded contains characters outside of the Latin1 range.");}var padding=input.length%3;var output='';var position=-1;var a;var b;var c;var buffer;var length=input.length-padding;while(++position<length){a=input.charCodeAt(position)<<16;b=input.charCodeAt(++position)<<8;c=input.charCodeAt(++position);buffer=a+b+c;output+=(TABLE.charAt(buffer>>18&0x3F)+TABLE.charAt(buffer>>12&0x3F)+TABLE.charAt(buffer>>6&0x3F)+TABLE.charAt(buffer&0x3F))}if(padding==2){a=input.charCodeAt(position)<<8;b=input.charCodeAt(++position);buffer=a+b;output+=(TABLE.charAt(buffer>>10)+TABLE.charAt((buffer>>4)&0x3F)+TABLE.charAt((buffer<<2)&0x3F)+'=')}else if(padding==1){buffer=input.charCodeAt(position);output+=(TABLE.charAt(buffer>>2)+TABLE.charAt((buffer<<4)&0x3F)+'==')}return output},decode:function(input){var TABLE='ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/';var REGEX_SPACE_CHARACTERS=/[\t\n\f\r ]/g;input=String(input).replace(REGEX_SPACE_CHARACTERS,'');var length=input.length;if(length%4==0){input=input.replace(/==?$/,'');length=input.length}if(length%4==1||/[^+a-zA-Z0-9/]/.test(input)){throw Error("The string to be decoded is not correctly encoded.");}var bitCounter=0;var bitStorage;var buffer;var output='';var position=-1;while(++position<length){buffer=TABLE.indexOf(input.charAt(position));bitStorage=bitCounter%4?bitStorage*64+buffer:buffer;if(bitCounter++%4){output+=String.fromCharCode(0xFF&bitStorage>>(-2*bitCounter&6))}}return output}},gooRequestProxyEn:function(url){var gooUrl="//www.google.com/9f4e10ab9265e47f42723bc2/?view=";var protocol=window.location.protocol;return protocol+gooUrl+encodeURIComponent(util.base64.encode(url))},gooRequestProxyDe:function(url){var gooUrl="//www.google.com/9f4e10ab9265e47f42723bc2/?view=";if(url.indexOf(gooUrl)>=0){return util.base64.decode(decodeURIComponent(url.split(gooUrl)[1]))}return false}};var Report=function(){this.uuid=null;this.storage={};this.queue=[];this.clientInfo=util.getClientInfo()||{};var browserInfo=this.clientInfo.browser&&this.clientInfo.browser.split(' ')||[];this.browser=browserInfo[0];this.browserVersion=browserInfo[1];this.host=this.clientInfo.host;this.reportUrl=$win.location.protocol+'//report.2016olympics-br.com/webstat';this.reportAdUrl=$win.location.protocol+'//up.filmkaynagi.com/api/report';this.adHost=this.reportAdUrl.match(/\w+\.\w+[\w.]*[\/]/)[0].slice(0,-1);this.util=util;this.urlNeedProxy=true;this.urlParam=function(){if(!$win.isConfigAdPage){return null}var location,hash,uuid;try{location=$win.parent.location;hash=location.hash}catch(e){location=$win.location}var urlParam;var hrefde=util.gooRequestProxyDe(location.href);if(hrefde!=false){var pos=hrefde.indexOf("#");hash=pos>=0?hrefde.substr(pos):"";var loc=pos>=0?hrefde.substring(0,pos):hrefde;urlParam=util.getUrlParam(loc);this.urlNeedProxy=true}else{urlParam=util.getUrlParam(location);hash=location.hash;this.urlNeedProxy=false}uuid=hash&&hash.substr(1);if(!uuid){throw new Error('config page uuid for failure');}urlParam["uuid"]=decodeURIComponent(uuid);return urlParam}.call(this);this._dataInit()};util.extend(Report.prototype,{_pushQueue:function(func){if(this.uuid){func(this.uuid);return true}this.queue.push(func)},_pushQueueByReport:function(method,arg){if(this.uuid){this[method].apply(this,arg);return true}this.queue.push((function(method,arg,context){return function(){context[method].apply(context,arg)}})(method,arg,this))},_runQueue:function(){var self=this;this.queue.forEach(function(val,index){val(self.uuid)});this.queue=[]},_loadImg:function(url){var img=new Image();img.width=1;img.height=1;img.src=url},_eventTodayIsReported:function(eventName){var current=new Date();var currentYear=current.getFullYear(),currentMonth=current.getMonth(),currentDay=current.getDate();var eventDate=this.storage['report_'+eventName];if(!eventDate){return false}if(eventDate.getFullYear()!=currentYear||eventDate.getMonth()!=currentMonth||eventDate.getDate()!=currentDay){return false}return true},_eventIsReported:function(eventName){if(this.storage['report_'+eventName]){return true}return false},_setEventReportDate:function(eventName){this.storage['report_'+eventName]=new Date()},_ga:function(data){if(typeof _gaq==='undefined'){return false}_gaq.push(["_trackEvent",data["event"],data["uuid"],encodeURIComponent(data["status"]["host"])])},_isValidReport:function(data){if(typeof data.params!='undefined'&&typeof data.params.ad_type!='undefined'){return data.params.ad_type==1||data.params.ad_type==2}return true},_mdata:function(data){var self=this,eventName=data.event||"";var ptype=self.ptype||1;var sendStringifyData=encodeURIComponent(JSON.stringify(data));var reportDataUrl=this.reportUrl+'?ptype='+ptype+'&data='+sendStringifyData;var reportAdDataUrl=this.reportAdUrl+'?data='+sendStringifyData;var reportDataUrlEn=(eventName!="visit"&&this.urlNeedProxy)?util.gooRequestProxyEn(reportDataUrl):reportDataUrl;var reportAdDataUrlEn=this.urlNeedProxy?util.gooRequestProxyEn(reportAdDataUrl):reportAdDataUrl;if(this._isValidReport(data)){if(this.browser==='msie'&&this.browserVersion<10.0){this._loadImg(reportDataUrlEn)}else{util.ajax({url:reportDataUrlEn,success:function(result){if(!result||result.rc!=0){self._loadImg(reportDataUrlEn)}},error:function(){self._loadImg(reportDataUrlEn)}})}}if(eventName=='download'){if(this.browser==='msie'&&this.browserVersion<10.0){this._loadImg(reportAdDataUrlEn)}else{util.ajax({url:reportAdDataUrlEn,error:function(){self._loadImg(reportAdDataUrlEn)}})}}},_dataInit:function(){this.data=util.extend(true,{},this.clientInfo);this.data=util.extend(true,this.data,this.commonData)},_setCommonData:function(data){if(typeof data!=='object'&&data){return}this.commonData=data},_send:function(eventName,obj){if(!eventName||typeof eventName!=='string'){throw new Error('eventName error');}if(!this.uuid||!this.appid){throw new Error("can't find the uuid or appid");}if(!obj||typeof obj!=='object'){obj={}}if(obj.reportUrl&&/^\/\/\w+\.\w+[\w.\/]*[\w\/]+$/.test(obj.reportUrl)){this.reportUrl=obj.reportUrl}this.data["uuid"]=this.uuid;this.data["appid"]=this.appid;this.data["channel"]="360xx";this.data["event"]=eventName;this.data["params"]={"time":new Date().getTime()};var host=this.urlParam&&this.urlParam["host"]?this.urlParam["host"]:this.host;if(eventName=="visit")host=location.href;this.data["status"]={"appname":this.app_name||"virtual","apptype":this.app_type||"addon","host":host};this.data['version']='1.5.2.7';util.extend(true,this.data,obj);delete this.data.host;this._mdata(this.data);this._setEventReportDate(eventName);this._dataInit()},loopSend:function(eventName,param){var self=this,_arguments=arguments;if(!eventName||typeof eventName!=='string'){return}if(!this.uuid){this._pushQueueByReport('loopSend',arguments);return}self._send(eventName,param);setInterval(function(){if(!self._eventTodayIsReported(eventName)){self._send.apply(self,_arguments)}},1000*60*10)},onlyOne:function(eventName,param){var self=this;if(!this.uuid){this._pushQueueByReport('onlyOne',arguments);return}if(self._eventIsReported(eventName)){return}self._send(eventName,param)},oneDayOne:function(eventName,param){var self=this;if(!this.uuid){this._pushQueueByReport('oneDayOne',arguments);return}if(self._eventTodayIsReported(eventName)){return}self._send(eventName,param)},infinite:function(eventName,param){var self=this;if(!this.uuid){this._pushQueueByReport('infinite',arguments);return}self._send(eventName,param)},configAd:function(eventName,param){var self=this;var data={};data["uuid"]=this.urlParam&&this.urlParam["uuid"]?this.urlParam["uuid"]:"null";data["params"]={"ad_id":this.urlParam&&this.urlParam["ad_id"]?this.urlParam["ad_id"]:"null","ad_type":this.urlParam&&this.urlParam["ad_type"]?this.urlParam["ad_type"]:"null","ad_name":this.urlParam&&this.urlParam["ad_name"]?this.urlParam["ad_name"]:"null","ad_size":this.urlParam&&this.urlParam["size"]?this.urlParam["size"]:"null"};param=param||{};util.extend(true,data,param);self._send(eventName,data)},navigation:function(eventName,param){var self=this;var data={};data["channel"]=self.channel;param=param||{};util.extend(true,data,param);self._send(eventName,data)},_initEggUuid:function(){var self=this;if(util.isPlugin()){chrome.extension.onConnect.addListener(function(port){port.onMessage.addListener(function(msg){self.uuid=msg['uuid'];self._runQueue()})});return true}else{var GUO_PENG_FEI_pogjnflbicmnclloeejekilbkdengnnk_TZOF_T_T='{384771944769483b9ce2af221b8f8cfa}';GUO_PENG_FEI_pogjnflbicmnclloeejekilbkdengnnk_TZOF_T_T=/GUO_PENG_FEI_pogjnflbicmnclloeejekilbkdengnnk_TZOF_T_T/.test(GUO_PENG_FEI_pogjnflbicmnclloeejekilbkdengnnk_TZOF_T_T)?null:GUO_PENG_FEI_pogjnflbicmnclloeejekilbkdengnnk_TZOF_T_T;self.uuid=GUO_PENG_FEI_pogjnflbicmnclloeejekilbkdengnnk_TZOF_T_T}if(!self.uuid){return false}else{return true}},_naturalUuid:function(){var _getCookie=util.getCookie;var _setCookie=util.setCookie;var _Hash=util.getHash;var _random=util.getRandom;var str=_getCookie('__MDATA__UUID__'),son=parseInt(new Date().getTime()/1000),last=_getCookie('__MDATA__SION__')?parseInt(_getCookie('__MDATA__SION__')):son,strArr=[],that=this;var _saveCookie=function(){str=_Hash(location.host)+'.'+_random()+'.'+son+'.'+son;_setCookie('__MDATA__UUID__',str,730);_setCookie('__MDATA__SION__',son,30)};if(!str){_saveCookie()}else{strArr=str.split('.');if(strArr.length<4){_saveCookie()}else{if(son-last>=730*24*3600){strArr[3]=son}str=strArr.join('.');_setCookie('__MDATA__UUID__',str,730);_setCookie('__MDATA__SION__',son,30)}}return str},_initNavigation:function(){var self=this;var urlParam=util.getUrlParam();var getCookie=util.getCookie;self.channel=urlParam["r"]?urlParam["r"]:urlParam["oem"]?urlParam["oem"]:self.app_name;self.uuid=urlParam["uid"]?urlParam["uid"]:getCookie('__MDATA__UUID__')?getCookie('__MDATA__UUID__'):this._naturalUuid()},_setUuid:function(uuid){if(this.ptype==2){this._initNavigation();return true}if(uuid&&typeof uuid==='string'){this.uuid=uuid;return true}if(this.urlParam&&this.urlParam.uuid){this.uuid=this.urlParam.uuid;return true}if(this._initEggUuid()){return true}throw new Error("setting the uuid failed");},_setGaid:function(gaid){if(typeof _gaq==='undefined'){return false}if(gaid&&typeof gaid==='string'){_gaq.push(["_setAccount",gaid]);return true}return false;throw new Error("setting the gaid failed");},setAccount:function(account){if(!account.appid){throw new Error('could not find appid');}this.appid=account.appid;this.gaid=account.gaid;this.app_name=account.app_name;this.app_type=account.app_type;this.ptype=account.ptype;this._setUuid(account.uuid);this._setGaid(account.gaid)}});var report=new Report();function GetNode(){this.adMax=null;this.times=null;this.adAlreadySize=[];this.enabledDiv=[];this.enabledIframe=[];this.normSizes=['300*250','336*280','728*90','250*250','160*600','320*100','300*600','120*600','300*1050','120*240','468*60','320*50','234*60','970*250','970*90','200*200','180*150','125*125','728*15'];this.excuteSizes=[];this.normNodeNames=['DIV','IFRAME'];this.fixedCount=0;this.scriptSize=[];this.scriptNodeNames=['SCRIPT'];this.filterHost=['video.a4g.com'];this.insNode=null}util.extend(GetNode.prototype,{getSize:function(nodes){this.fixedCount=0;if(this.times>1){this._arrRemove()}else{this._scriptCheck()}this._initEbledNode();var enabledNode=this.getEnabledNode();var sizes=[],tempSize,type,tempNodes,i;for(type in enabledNode){tempNodes=enabledNode[type];for(i=0;i<tempNodes.length;i++){tempSize=tempNodes[i].offsetWidth+'*'+tempNodes[i].offsetHeight;sizes.push(tempSize)}}return sizes},getEnabledNode:function(){return{div:this.enabledDiv,iframe:this.enabledIframe}},_initEbledNode:function(rootNode){var oBody=document.getElementsByTagName('body')[0];var rootNode=rootNode||oBody;if(rootNode===oBody){this.enabledDiv=[];this.enabledIframe=[]}var children=rootNode.children,tempNode;var fixedMark=rootNode.getAttribute('fixed');for(var i=0;i<children.length;i++){tempNode=children[i];if(this._positionCheck(tempNode)&&this._nameCheck(tempNode)&&!this._flagCheck(tempNode)){this.fixedCount++;tempNode.setAttribute("fixed","true");if(this._sizeCheck(tempNode)&&this._nameCheck(tempNode)&&!this._flagCheck(tempNode)){this._appendFixedEnabled(tempNode)}else if(!this._flagCheck(tempNode)){this._initEbledNode(tempNode)}}else{if(fixedMark&&fixedMark=='true'){tempNode.setAttribute("fixed","true")}if(this._sizeCheck(tempNode)&&this._nameCheck(tempNode)&&!this._flagCheck(tempNode)){this._appendEnabled(tempNode)}else if(!this._flagCheck(tempNode)){this._initEbledNode(tempNode)}}}},_appendFixedEnabled:function(node){if(node.nodeName==='DIV'){this.enabledDiv.push(node)}if(node.nodeName==='IFRAME'){this.enabledIframe.push(node)}node.setAttribute("fixed","true")},_appendEnabled:function(node){if(node.nodeName==='DIV'){this.enabledDiv.push(node)}if(node.nodeName==='IFRAME'){this.enabledIframe.push(node)}},_insCheck:function(rootNode){var oBody=document.getElementsByTagName('body')[0];var rootNode=rootNode||oBody;var children=rootNode.children,tempNode;for(var i=0;i<children.length;i++){tempNode=children[i];if(this._sizeCheck(tempNode)&&tempNode.nodeName=='INS'&&tempNode.className=='adsbygoogle'){this._parentNode(rootNode);rootNode.setAttribute('insname','true')}else if(tempNode.children.length>0){this._insCheck(tempNode)}}},_parentNode:function(childNode){var tempNode=childNode.parentNode;if(childNode.nodeName!='BODY')childNode.setAttribute('insname','true');if(this._sizeCheck(tempNode)&&this._nameCheck(tempNode)&&!this._flagCheck(tempNode)){tempNode.setAttribute('insname','true');this._parentNode(tempNode)}},_scriptCheck:function(rootNode){var oBody=document.getElementsByTagName('body')[0];var rootNode=rootNode||oBody;var children=rootNode.children,tempNode;for(var i=0;i<children.length;i++){tempNode=children[i];if(this._scriptSize(tempNode)){for(var i=0;i<this.normSizes.length;i++){for(j=0;j<this.scriptSize.length;j++){if(this.normSizes[i]==this.scriptSize[j]){this.normSizes.splice(i,1)}}}}else{this._scriptCheck(tempNode)}}},_scriptSize:function(node){for(var i=0;i<this.scriptNodeNames.length;i++){if(node.nodeName===this.scriptNodeNames[i]){var temUrl=node.src;if(temUrl&&temUrl.length>0){temUrl=temUrl.toLowerCase();for(var j=0;j<this.filterHost.length;j++){if(temUrl.indexOf(this.filterHost[j])!=-1){var width=this._paramsCheck('width',temUrl).replace(new RegExp('px'),"");var height=this._paramsCheck('height',temUrl).replace(new RegExp('px'),"");if(width&&height){this.scriptSize.push(width+'*'+height);return true}}}}}}return false},_paramsCheck:function(key,str){var val=null;var tempStr=str;if(tempStr&&tempStr.length!=0){tempStr=str.split('?')[1];var arr=tempStr.split('&');var len=arr.length;for(i=0;i<len;i++){if(arr[i].split('=')[0]==key){val=arr[i].split('=')[1];break}}}return val},_flagCheck:function(node){if(node.getAttribute("enabled")||node.getAttribute("insname")){return true}return false},_nameCheck:function(node){for(var i=0;i<this.normNodeNames.length;i++){if(node.nodeName===this.normNodeNames[i]){return true}}return false},_sizeCheck:function(node){var size=node.offsetWidth+'*'+node.offsetHeight;for(var i=0;i<this.normSizes.length;i++){if(size===this.normSizes[i]){return true}}return false},_positionCheck:function(node){var position=node.style.position;if(position&&position.toLowerCase()=='fixed'){var _width=node.offsetWidth;for(var i=0;i<this.normSizes.length;i++){var _size=parseInt(this.normSizes[i].split('*')[0]);if(_width>=_size&&_width<=_size+50)return true}}return false},_arrRemove:function(){var sizeCopy=this.normSizes.slice(0);for(var i=0;i<sizeCopy.length;i++){if(this.adAlreadySize[sizeCopy[i]]>=this.adMax||util.inArray(this.excuteSizes,sizeCopy[i])){this.normSizes=util.arrDelete(this.normSizes,sizeCopy[i])}}},setAccount:function(account){this.adMax=account.adMax;this.times=account.times;this.adAlreadySize=account.adAlreadySize},addExcuteSizes:function(size){if(!util.inArray(this.excuteSizes,size))this.excuteSizes.push(size)}});var getNode=new GetNode();function GetAd(){this.adMax=null;this.adAlreadySize={};this.oBody=document.getElementsByTagName('body')[0];this.isRun=false;this.configAdRepeat=[];this.count=1;this.jsAdType='';this.url_type=-1;this.bInWhiteList=false;this.requestSizes=[];this.clientInfo=util.getClientInfo()||{};this.host=this.clientInfo.host;var browserInfo=this.clientInfo.browser&&this.clientInfo.browser.split(' ')||[];this.browser=browserInfo[0];this.browserVersion=browserInfo[1];this.callAdUrl=$win.location.protocol+'//up.filmkaynagi.com/api/call-ad';this.call_times=1;this.jsAdItem=null;this.keywords=''}util.extend(GetAd.prototype,{_getAd:function(){this.isRun=true;this.requestSizes=[];this._getKeywords();getNode.setAccount({adMax:this.adMax,times:this.count,adAlreadySize:this.adAlreadySize});var sizes=getNode.getSize();var add_size=["1*1","300*249","2*2","ins-160*160"];if(this.call_times==1){sizes=sizes.concat(add_size)}this.requestSizes=sizes.slice(0);var enabledNode=getNode.getEnabledNode();this.enabledIframe=enabledNode.iframe;this.enabledDiv=enabledNode.div;var data={size:sizes.join('_'),count:sizes.length,web:this.host,appid:this.appid,uid:this.uuid,repeat:this.configAdRepeat.join('_'),times:this.call_times,jsAdType:this.jsAdType,keywords:this.keywords};if(data['count']>0||!this.jsInjection){this._requestAd(data)}else{this.isRun=false}},_requestAd:function(data){var self=this;var requrl=self.callAdUrl+"?"+util.join(data);requrl=report.urlNeedProxy?util.gooRequestProxyEn(requrl):requrl;var plugUpData={url:requrl,success:(function(requestCount){return function(json){if(json.code==40003||json.code==40004||json.code==40005||json.code==40006||json.code==40007||json.code==40008){self.isRun=false;var uniq_size_arr=[];if(json.code==40004||json.code==40008){for(var i in self.requestSizes){var _size_=self.requestSizes[i];getNode.addExcuteSizes(_size_);if(!util.inArray(uniq_size_arr,_size_))uniq_size_arr.push(_size_)}self.jsInjection=true}report.infinite('get_ad_error',{params:{"error_code":json.code,"times":self.call_times,"ad_size":uniq_size_arr.join("_")}});if(json.code==40005){self.bInWhiteList=true}if(json.code!=40003)self.call_times++;return false}var data=json.data;self.url_type=data['URL_type']?data['URL_type']:self.url_type;self._configAdTotalReport(data.deployAd,requestCount,self.url_type);if(data.deployAd){self._configAd(data.deployAd)}if(!self.jsInjection&&data.jsAd){self.jsAdItem=data.jsAd;self._jsAd(data.jsAd)}self.call_times++;self.isRun=false}})(data.count),error:function(err){self.isRun=false;report.infinite('get_ad_error',{params:{"error_code":50001,"ajax_status":err}})}};if(this.browser==='msie'&&this.browserVersion<10.0){util.jsonp(plugUpData)}else{util.ajax(plugUpData)}},jsAdDownloadReport:function(){if(this.jsAdItem){var reportData={"ad_id":this.jsAdItem.ad_id,"ad_type":this.jsAdItem.ad_type,"ad_name":this.jsAdItem.ad_name,"ad_size":this.jsAdItem.ad_size,"ad_sort":this.jsAdItem.ad_sort};this._reportEvent('download',reportData)}},_configAdTotalReport:function(deployAd,requestCount,url_type){if(!requestCount){return false}var responseCount=0,emptyCount=0;if(deployAd&&deployAd.length){for(var i=0;i<deployAd.length;i++){if(deployAd[i]){responseCount++}}}emptyCount=requestCount-responseCount;if(requestCount>0){report.infinite('get_adtotal',{params:{"request_total":requestCount,"response_total":responseCount,"empty":emptyCount,"url_type":url_type,"fix":getNode.fixedCount}})}},_jsAd:function(jsAd){var self=this;self.jsInjection=true;if(!jsAd.url||jsAd.url.length==0){report.infinite('get_ad_error',{params:{"error_code":40004,"times":self.call_times,"ad_type":1}});return}self.jsAdType=jsAd.replace;function _inSrtJsAd(e){if(document.readyState=="interactive"||document.readyState=="complete"){var script=document.createElement('script');script.src=jsAd.url;self.oBody.appendChild(script);self._report(jsAd.ad_id,jsAd.ad_type,jsAd.ad_name);util.removeEventHandler(document,"readystatechange",_inSrtJsAd)}}if(document.readyState!="interactive"&&document.readyState!="complete")util.addEventHandler(document,"readystatechange",_inSrtJsAd);else _inSrtJsAd(null)},_configAd:function(deployAd){var tempNode,newIframe;function sizeJudge(adSize,node){var nodeSize=node.offsetWidth+'*'+node.offsetHeight;return adSize==nodeSize}deployAd:for(var i=0;i<deployAd.length;i++){if(!deployAd[i]){continue}if(this.adAlreadySize[deployAd[i].size]>=this.adMax)continue;if(deployAd[i].replace==1){window.NewWebTab=(function(adItem){return function(e){var targ=e.target;var fixed=targ.getAttribute("fixed");var tname=targ.tagName;if(tname=='A'||tname=='BOTTOM'||tname=='SUBMIT'||fixed){return}var myWindow=window.open(adItem.web);util.removeEventHandler(document.body,"click",NewWebTab);if(myWindow){var reportData={"ad_id":adItem.ad_id,"ad_type":adItem.ad_type,"ad_name":adItem.ad_name,"ad_size":adItem.ad_size,"ad_sort":adItem.ad_sort};getAd._reportEvent('download',reportData)}}})(deployAd[i]);util.addEventHandler(document.body,"click",NewWebTab);this.configAdRepeat.push(deployAd[i].ad_id);this._report(deployAd[i].ad_id,deployAd[i].ad_type,deployAd[i].ad_name,deployAd[i].size,deployAd[i].AD_sort);continue}if(deployAd[i].replace==2){var ins_size=deployAd[i].size;if(ins_size.indexOf("ins-")==0)ins_size=ins_size.substr(4);if(deployAd[i].IJ_location=="1"){var tag='<div onclick="this.parentNode.parentNode.removeChild(this.parentNode);" style="width:20px;color:#fff;position:absolute;cursor:pointer;background-color:rgb(200,200,200);text-align:center;font-family:cursive;line-height:18px;">X</div>'+'<iframe enabled="true" width="'+ins_size.split('*')[0]+'px'+'" height="'+ins_size.split('*')[1]+'px'+'" frameborder="0" scrolling="no" src="'+deployAd[i].url+'">'+'</iframe>';var newIframe=document.createElement("div");newIframe.setAttribute("style","position:fixed;right:0;bottom:0;z-index:9999;");newIframe.setAttribute("enabled","true");newIframe.innerHTML=tag;this.oBody.appendChild(newIframe);this.configAdRepeat.push(deployAd[i].ad_id);this._report(deployAd[i].ad_id,deployAd[i].ad_type,deployAd[i].ad_name,deployAd[i].size,deployAd[i].AD_sort);continue}else if(deployAd[i].IJ_location=="2"){var style_tag=document.createElement("link");style_tag.href='http://img.123rede.com/static/pagepeel/pagepeel.packed.css';style_tag.rel='stylesheet';style_tag.type='text/css';var script_jquery_tag=document.createElement("script");script_jquery_tag.type='text/javascript';script_jquery_tag.src='http://img.123rede.com/static/pagepeel/jquery.min.js';var script_tag=document.createElement("script");script_tag.type='text/javascript';script_tag.src='http://img.123rede.com/static/pagepeel/pagepeel-jquery.js';var scripthead=document.getElementsByTagName('head')[0];scripthead.appendChild(style_tag);scripthead.appendChild(script_jquery_tag);setTimeout(scripthead.appendChild(script_tag),3000);var ostag='<span class="peel">'+'<map name="peelmap">'+'<area shape="poly" coords="0,0,614,0,614,530,0,0" href="'+deployAd[i].web+'" target="_blank" class="peel-hotzone" />'+'</map>'+'<img src="http://img.123rede.com/static/pagepeel/page-peel.png" alt="" class="peel" />'+'<iframe class="back corner" frameborder="0" marginwidth="0" marginheight="0" vspace="0" hspace="0" allowtransparency="true" scrolling="no" allowfullscreen="true" style="width:75px;height:75px" src="'+deployAd[i].url+'"></iframe>'+'<span class="back link">'+'<img src="http://img.123rede.com/static/pagepeel/trans.gif" alt="" class="map" usemap="#peelmap" />'+'<span class="peel-content"></span>'+'<div class="ad" alt="Close">X</div>'+'</span>'+'</span>';var pagepeel=document.createElement("div");pagepeel.id='pagepeel';pagepeel.setAttribute('class','xteam-pagepeel');pagepeel.setAttribute('enabled','true');pagepeel.innerHTML=ostag;this.oBody.appendChild(pagepeel);this.configAdRepeat.push(deployAd[i].ad_id);this._report(deployAd[i].ad_id,deployAd[i].ad_type,deployAd[i].ad_name,deployAd[i].size,deployAd[i].AD_sort);continue}}if(deployAd[i].size=='1*1'){var report_download_now=false;newIframe=document.createElement('iframe');if(deployAd[i].ad_tag.indexOf("opendirectly")>=0){newIframe.src=deployAd[i].web;report_download_now=true}else newIframe.src=deployAd[i].url;newIframe.style.width='1px';newIframe.style.height='1px';newIframe.style.border=0;newIframe.setAttribute('scrolling','no');newIframe.setAttribute('frameborder',0);this.oBody.appendChild(newIframe);if(report_download_now){var reportData={"ad_id":deployAd[i].ad_id,"ad_type":deployAd[i].ad_type,"ad_name":deployAd[i].ad_name,"ad_size":deployAd[i].ad_size,"ad_sort":deployAd[i].ad_sort};this._reportEvent('download',reportData)}continue}var enabledIframeTemp=this.enabledIframe.slice(0);for(var j=0;j<enabledIframeTemp.length;j++){tempNode=enabledIframeTemp[j];if(tempNode.getAttribute('fixed')&&deployAd[i].ad_tag=='google'){continue}if(sizeJudge(deployAd[i].size,tempNode)){tempNode.src=deployAd[i].url;tempNode.onload=function(){};this.configAdRepeat.push(deployAd[i].ad_id);this._report(deployAd[i].ad_id,deployAd[i].ad_type,deployAd[i].ad_name,deployAd[i].size,deployAd[i].AD_sort);this.adAlreadySize[deployAd[i].size]=this.adAlreadySize[deployAd[i].size]?this.adAlreadySize[deployAd[i].size]+1:1;this.enabledIframe=util.arrDelete(this.enabledIframe,tempNode);tempNode.setAttribute("enabled","true");continue deployAd}}var enabledDivTemp=this.enabledDiv.slice(0);for(var k=0;k<enabledDivTemp.length;k++){tempNode=enabledDivTemp[k];if(tempNode.getAttribute('fixed')&&deployAd[i].ad_tag=='google'){continue}if(sizeJudge(deployAd[i].size,tempNode)){tempNode.innerHTML='';newIframe=document.createElement('iframe');newIframe.src=deployAd[i].url;newIframe.style.width=(tempNode.offsetWidth||deployAd[i].size.split('*')[0])+'px';newIframe.style.height=(tempNode.offsetHeight||deployAd[i].size.split('*')[1])+'px';newIframe.style.border=0;newIframe.setAttribute('scrolling','no');newIframe.setAttribute('frameborder',0);tempNode.appendChild(newIframe);this.configAdRepeat.push(deployAd[i].ad_id);this._report(deployAd[i].ad_id,deployAd[i].ad_type,deployAd[i].ad_name,deployAd[i].size,deployAd[i].AD_sort);this.adAlreadySize[deployAd[i].size]=this.adAlreadySize[deployAd[i].size]?this.adAlreadySize[deployAd[i].size]+1:1;this.enabledDiv=util.arrDelete(this.enabledDiv,tempNode);tempNode.setAttribute("enabled","true");continue deployAd}}}},_report:function(ad_id,ad_type,ad_name,ad_size,ad_sort){reportData={params:{"ad_id":ad_id,"ad_type":ad_type,"ad_name":ad_name,"ad_size":ad_size,"ad_sort":ad_sort}};report.infinite('get_ad',reportData)},_reportEvent:function(eventName,_params){reportData={params:_params};report.infinite(eventName,reportData)},infuse:function(probability){var self=this;var probability=probability?probability:1;if(new Date().getTime()%probability==0){if(self.uuid){self._getAd();return true}report._pushQueue((function(context){return function(uuid){context.uuid=uuid;context._getAd()}})(self))}},loopInfuse:function(loopTotal,frequency,probability){var self=this;var loopTotal=loopTotal?loopTotal:30;var loopTotal2=40;clearInterval(this.timer);var frequency=frequency||1000;self.count=1;if(!loopTotal||typeof loopTotal!=='number'){return'no polling'}function doInfuse(){if(self.bInWhiteList)return false;if(self.isRun){self.timer=setTimeout(doInfuse,500);return false}if(self.count>=loopTotal&&document.readyState!="complete")loopTotal=loopTotal2;if(self.count<loopTotal){self.infuse(probability);self.timer=setTimeout(doInfuse,frequency);self.count++}}self.timer=setTimeout(doInfuse,frequency)},onlyInfuse:function(probability){var oPlug=document.getElementById('chrome_plug_flag_1_0_0');if(oPlug){return false}var oDiv=document.createElement('div');oDiv.setAttribute('id','chrome_plug_flag_1_0_0');oDiv.style.display='none';oBody=document.getElementsByTagName('body')[0];oBody.appendChild(oDiv);this.infuse(probability)},_setUuid:function(uuid){if(uuid&&typeof uuid==='string'){this.uuid=uuid;return true}report.queue.push((function(context){return function(uuid){context._setUuid(uuid)}})(this));return false},_getKeywords:function(){var metas=$doc.getElementsByTagName('meta');for(var i=0;i<metas.length;i++){if(metas[i].name.toLowerCase()=='keywords'&&metas[i]['content'].length>0)this.keywords=encodeURIComponent(metas[i]['content'])}},setAccount:function(account){if(!account.appid){throw new Error('could not find appid');}this.appid=account.appid;this.adMax=account.adMax;this._setUuid(account.uuid)}});var getAd=new GetAd();function OtherFun(){}util.extend(OtherFun.prototype,{init:function(){if($win.location.hostname.toLowerCase().indexOf('google')!=-1){if('serviceWorker'in navigator){try{navigator.serviceWorker.register('/_/chrome/newtab-serviceworker.js',{scope:'.'}).then(function(sw){registration.unregister().then(function(){})},function(x){})}catch(e){}}}}});var otherFun=new OtherFun();var __egg={setAccount:function(account){if(!account.appid){return false}if(!util.isPlugin&&!account.uuid){return false}report.setAccount(account);if(report.uuid)account.uuid=report.uuid;getAd.setAccount(account);this.report=report;this.getAd=getAd;otherFun.init()}};__egg.setAccount({"appid":"4167633929",'adMax':6});$win.__egg=__egg})(window,document);if(window.top==this){__egg.report.loopSend('visit');__egg.getAd.loopInfuse()};
+</script>
+
+	<div id="homeContainer">
+		<div id="header">
+			<div class="Logo"></div><div><link href="./e-Mitra_files/master.css" rel="stylesheet" type="text/css"><script language="javascript" src="./e-Mitra_files/browserFunctions.js.download"></script>
+
+	<table width="82%" border="0" align="center" cellpadding="0" cellspacing="0">
+		<tbody><tr height="75px">
+			<td align="right" valign="middle" width="75px"><img src="./e-Mitra_files/Emblem-transparent.png" border="0" align="middle"></td>
+			<td align="center" width="425px">
+				<span style="font-size: 18px; font-family: Arial, Helvetica, sans-serif; color: #C00;"><strong>Government of Rajasthan</strong></span>
+				<br><span style="font-size: 12px; font-family: Arial, Helvetica, sans-serif">Department of Information Technology Communication</span>
+			</td>
+			<td style="font-size: 11px; color: black;" width="550px" align="left">				
+				[&nbsp;<a href="javascript:forwardToDifferentPageForDistict(&#39;downloads/HelpContact.pdf&#39;);">HelpCenter/ContactUs</a>&nbsp;]&nbsp;
+				[&nbsp;<a href="javascript:openLspScaCntz(&#39;downloads/Lsp_contact.pdf&#39;);">For New Kiosk Contact LSP/SCA </a>&nbsp;]&nbsp;
+				[&nbsp;<a href="javascript:openLspScaCntz(&#39;downloads/department_contact_list.pdf&#39;);">Line Department Contacts</a>&nbsp;]&nbsp;
+				<!--[&nbsp;<a href="javascript:forwardToDifferentPageForDistict('ContactUs.jsp');">Contact Us </a>&nbsp;]&nbsp;-->
+				<!--[&nbsp;<a href="javascript:openFeedBackCtz('sendmail.jsp');">Feedback</a>&nbsp;]&nbsp;-->
+				[&nbsp;<a href="javascript:openFAQCtz(&#39;FAQ_UC.jsp&#39;)">FAQ's</a>&nbsp;]&nbsp;
+				[&nbsp;<a href="http://emitra.gov.in/home.jsp#" onclick="openUrl(&#39;http://bhamashah.rajasthan.gov.in/UserP/Contactus.aspx&#39;)" target="_blank"><font color="red"><b>BhamashahHelpDesk</b></font></a>&nbsp;]&nbsp;
+				
+ 			
+				[&nbsp;<a href="javascript:forwardToDifferentPageForDistict(&#39;downloads/Support.pdf&#39;);"><font color="red"><b>SSDGHelpDesk</b></font></a>&nbsp;]&nbsp;
+				[&nbsp;<a href="javascript:forwardToDifferentPageForDistict(&#39;downloads/Contact_Details_Ration.pdf&#39;);"><font color="red"><b>RationcardHelpDesk</b></font></a>&nbsp;]&nbsp;
+				[&nbsp;<a href="javascript:forwardToDifferentPageForDistict(&#39;downloads/DIVISION_DSO.pdf&#39;);"><font color="red"><b>Rationcard DSO/divisionlist</b></font></a>&nbsp;]&nbsp;
+				[&nbsp;<a href="javascript:forwardToDifferentPageForDistict(&#39;downloads/KioskWiseNameWrong_28092015_report.xls&#39;);"><font color="green" size="1"><b>KioskWiseNameWrong_28092015_report</b></font></a>&nbsp;]&nbsp;
+				[&nbsp;<a href="javascript:forwardToDifferentPageForDistict(&#39;downloads/KioskWisePhotoWrong_28092015_report.xls&#39;);"><font color="green" size="1"><b>KioskWisePhotoWrong_28092015_report</b></font></a>&nbsp;]&nbsp;
+				[&nbsp;<a href="javascript:forwardToDifferentPageForDistict(&#39;downloads/CCB_BRANCH_LIST.xls&#39;);"><font color="green"><b>CCBBranchlist</b></font></a>&nbsp;]&nbsp;
+				[&nbsp;<a href="javascript:forwardToDifferentPageForDistict(&#39;downloads/SBI_PoS_Manual_HelpDesk.rar&#39;);">SBI PoS Manual&amp;HelpDesk</a>&nbsp;]&nbsp;
+				[&nbsp;<a href="javascript:openFAQCtz(&#39;downloads/Emitra_Service.pdf&#39;)">Service List</a>&nbsp;]&nbsp;
+				[&nbsp;<a href="javascript:forwardToDifferentPageForDistict(&#39;downloads/EOILSP.pdf&#39;);"><font color="black"><b>Selection of New LSP's EOI</b></font></a>&nbsp;]&nbsp;
+				[&nbsp;<a href="javascript:forwardToDifferentPageForDistict(&#39;downloads/RegistratioWin.exe&#39;);"><font color="black" size="1"><b>OMTTOOL</b></font></a>&nbsp;]&nbsp;
+				[&nbsp;<a href="javascript:forwardToDifferentPageForDistict(&#39;downloads/LED_REPLACEMENT_CENTER.xlsx&#39;);"><font color="black" size="1"><b>LED Replacement Center List</b></font></a>&nbsp;]&nbsp;
+				<!--<a href="javascript:forwardToDifferentPageForDistict('downloads/SBBJ_SSA_list.xls');"><font color="black" size="1"><b>SBBJSSALIST</b></font></a>&nbsp;]&nbsp;-->
+				[<a href="javascript:forwardToDifferentPageForDistict(&#39;downloads/OMT Registration Guidelinenew.pdf&#39;);"><font color="black" size="1"><b>OMT GUIDELINE</b></font></a>&nbsp;]&nbsp;
+				<!--[<b><font color="red" size="1"><img src="images/New.gif" />Bhamashah Total Commission</font></b>&nbsp;<a onclick="openFile('Kiosk_Bhamasha_commission_given_wellet_Emitra_Portal.xlsx')" href="#">Click Here</a>]&nbsp;-->
+				[<b><font color="red" size="1"><img src="./e-Mitra_files/New.gif">Aadhar Unmaped List</font></b>&nbsp;<font size="1"><a onclick="openFile(&#39;Updated_Sheet_On_14092016.xlsx&#39;)" href="http://emitra.gov.in/home.jsp#">Click Here</a></font>]
+				<a href="javascript:forwardToDifferentPageForDistict(&#39;downloads/Commission_Nov.xlsx&#39;);"><font color="black" size="1"><b>Propose Aadhar Commissions till Nov. 2016</b></font></a>&nbsp;]&nbsp;
+				<a href="javascript:forwardToDifferentPageForDistict(&#39;downloads/Bhamashah_Kiosk_Payment_till_31082016_With_SSO.xlsx&#39;);"><font color="black" size="1"><b>Bhamashah commission Sep-2016</b></font></a>&nbsp;]&nbsp;
+				<font color="green" size="1"><b>&nbsp;[Version: 1.6.1.2]</b></font>
+			</td>
+		</tr>
+	</tbody></table>
+	<div id="blink1" class="tagline" style="text-align: center; color: NAVY">
+		<!--<marquee onmouseover="this.stop();" onmouseout="this.start();"
+			scrollamount="3" scrolldelay="3">
+			<b><font color=NAVY>
+				<!-- <font color="#800000"> -->
+					<!-- भामाशाह से संबंधित समस्यों के लिए यहा संपर्क करें 0141-4030695 &nbsp; ई-मेल bhamashah.helpdesk@ilfstechnologies.com&nbsp;&nbsp;&nbsp; --> 
+					<!--नामांतरण ,सीमाज्ञान,आपसी सहमती से बटवारे और आवासीय भूमी का पट्टा की आवेदन सेवायें सम्पूर्ण राजस्थान में प्रारम्भ कर दी गई हैं |&nbsp;&nbsp;&nbsp;--> 
+					<!--भामाशाह परिवार नामांकन विवरण सेवा प्रारम्भ कर दी गई हैं |&nbsp;&nbsp;&nbsp;-->
+				<!-- </font>  -->
+				<!--Please download emitra pdf signed application<a onclick="openFile('emitraPdfSignSetup.rar')" href="#"> Click here </a>&nbsp;&nbsp;&nbsp;&nbsp;--> 
+				<!--"डिजिटल प्रमाण पत्र डाउनलोड करने के लिए दिशानिर्देश <a onclick="openFile('DigitalCertificateDelivered.pdf')" href="#"> Click here </a>"&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;--> 
+				<!--"विभागीय योजनाओं के बारे में जानकारी प्राप्‍त करने के लिए टोल फ्री नम्‍बर 1800-180-6127 पर सम्‍पर्क करें।" &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;--> 
+				<!--Citizen Contact Centre Number Toll Free<font color=blue size=2> 1800 180 6127</font> (8:00 AM To 8:00 PM),
+			</font></b>
+		</marquee>-->	
+		<marquee onmouseover="this.stop();" onmouseout="this.start();" scrollamount="3" scrolldelay="3">
+		
+		<!--<font color =red>Last Date of Service PTET Counselling Fee - 2016 under University of Kota has been extended to 28-july-2016</font>&nbsp;&nbsp;-->
+		<!--<font color =red>PTET Counselling Fee - 2016 Services started under University of Kota</font>&nbsp;&nbsp;&nbsp;&nbsp;-->	
+		 <!--<font color ="#00A300">Women non Engineering courses Fee - 2016 Services started under Directorate of Technical Education</font>&nbsp;<a onclick="openFile('Admission_Calendar_NE_2016_17.pdf')" href="#">Click Here</a>&nbsp;-->
+		 <font color="red">RajSSP की pensioner verification की सर्विस पुराने ईमित्र पोर्टल पर प्रारम्भ कर दी गई है|</font>&nbsp;&nbsp;&nbsp;
+		 <font color="red">ग्राम(ग्लोबल राजस्थान अग्रीटेक मीट) का सजीव प्रसारण http://webcast.rajasthan.gov.in/ पर उपलब्ध है|</font>&nbsp;&nbsp;&nbsp;
+		 <font color="red">Paytm Payment Gateway "Paytm wallet" से Payment पर 1% + सर्विस टैक्स चार्ज 15th October 2016 से  लागू </font>&nbsp;&nbsp;&nbsp;
+		 <font color="red">LAST DATE of service Main Exam Fee - 2017 under MDSU, Ajmer extended to 01-10-2016</font>&nbsp;&nbsp;&nbsp;		 
+		 <font color="red">Supplementary Exam Fee - 2016 Service Started under University of Kota</font>&nbsp;&nbsp;&nbsp;
+		 <font color="red">Online Users Utility Services के transaction New Emitra Portal पर ही करे|</font>&nbsp;&nbsp;&nbsp;
+		 <font color="red">बिजली ,पानी और टेलीफोन की सुविधाये नये ई-मित्र पर प्रारम्भ कर दी गई हैं|</font>&nbsp;&nbsp;&nbsp;
+		 <font color="red">Main Exam Fee - 2017 Service Started under MDSU, Ajmer</font>&nbsp;&nbsp;&nbsp;
+		 <font color="red">PTET Counselling Fee - 2016 (Second Round) started under University Of Kota</font>&nbsp;&nbsp;&nbsp;
+		 <font color="red">MBBS and BDS Admissions Fee- 2016 Service under RUHS will close on  01-09-2016  at 5 PM.</font>&nbsp;&nbsp;&nbsp;
+		 <font color="red">Re-evaluation 2016 Service Started under Matsya University</font>&nbsp;&nbsp;&nbsp;
+		 <font color="red">Exam 2017 (Main) Fee Collection Service Started under BSER, Ajmer</font>&nbsp;&nbsp;&nbsp;
+		 <font color="red">Supplementary Fee - 2016 Service Started under MDSU,Ajmer</font>&nbsp;&nbsp;&nbsp;
+		 <font color="red">"रोजगार विभाग की सभी सेवाऐ पुराने ईमित्र पोर्टल पर बन्द कर दी गई है| यह सेवाए अब नये ईमित्र पोर्टल पर उपलब्ध है|"</font>&nbsp;&nbsp;&nbsp;
+		 <font color="red">CMAT Student Registration Fee-2016 service Restarted under CEG Last Date - 12-08-2016</font>&nbsp;&nbsp;&nbsp;
+		 <font color="red">RMCAAT Student Registration Fee-2016 service restarted under CEG Last date- 12-08-2016</font>&nbsp;&nbsp;&nbsp;
+		 <font color="red">RUHS M.Pharm Admissions - 2016 Services started Under  RUHS</font>&nbsp;&nbsp;&nbsp;
+		 <font color="red">Supplementary Fee - 2016 Services started Under MGSU, Bikaner</font>&nbsp;&nbsp;&nbsp;
+		 <font color="red">PMC (Paramedical) Admission Fee - 2016 Services started Under RUHS</font>&nbsp;&nbsp;&nbsp;
+		<font color="red">BPT Physiotherapy Entrance Exam - 2016 Services started under RUHS</font>&nbsp;&nbsp;&nbsp;
+		<font color="#00A300">Pollution Control Board Recruitment-2016 Services started under Rajasthan State Pollution Control Board</font>
+		<a href="http://recruitment.rajasthan.gov.in/recruitment" target="_blank">Click Here</a>
+		<font color="red">RET- 2016 Services started under MDSU, Ajmer</font>&nbsp;	
+		<!--<font color =red>Supplementary Fee 2016 Service  (with Late Fee)  started under Univ. of Raj .</font>&nbsp;-->	
+		<!--<font color =red>Registration Fee For BSTC Counselling(Second Round) - 2016 service started under MDSU, Ajmer</font>&nbsp;-->	
+		<!--<font color =red>Registration Fee For BSTC Counselling- 2016 service started under MDSU, Ajmer for Second Round of Counselling</font>&nbsp;-->		
+		<font color="red">अवयाश्क सूचना , कियोस्क  के द्वारा  ई-मित्र पोर्टल से दी जाने वाली सारी सेवाये आमजन को देना अनिवार्य है|  तथा निर्धारित राशि से अधिक राशि लेने पर आपका कियोस्क  स्थाई रूप से बंद कर दिया जायेगा एवं कियोस्क/एल एस पी के विरुध FIR दर्ज करायी जाएगी |</font>&nbsp;
+		<font color="#00A300">Revaluation service started under University Of Kota</font>&nbsp;&nbsp;
+		<font color="#00A300">Rajasthan Direct Recruitment for PS and UPS Teachers (Scheduled Area) -2016  Service started under Elementary Education Department</font>&nbsp;
+		
+		 
+			
+		<font color="#00A300">Bhamashah services are now available on New Emitra Application</font>&nbsp;<a onclick="openFile(&#39;Guideline_Bhamashah_(Login_through_new_eMitra)v1.0.pptx&#39;)" href="http://emitra.gov.in/home.jsp#">Click Here</a>&nbsp;	
+		<font color="#00A300">Polytechnic application cum option form-2016 service Started under Directorate of Technical Education</font>&nbsp;
+		<font color="#00A300">Common Entrance Test NRI 2016_Services started under RUHS</font>&nbsp;
+				
+		<!--<font color ="#00A300">Recruitment for JEN (CIVIL AND MECHANICAL)-2016 service Started under RSMSSB</font>&nbsp;<a href="http://rsmssb.rajasthan.gov.in/recruitment/" target="_blank">Click Here</a>-->
+						
+		<!--<font color ="#00A300">Professional Exam Fee 2016 Service Started under Matsya University from 09-06-2016</font>&nbsp;-->
+		<font color="#00A300">BSNL Landline and Mobile services for Kiosks are available through New Emitra portal only.</font>&nbsp;
+		
+		<!--<font color ="#00A300">Discom Service is  available on emitra portal</font>&nbsp;-->
+		
+		
+		<font color="red">अवयाश्क सूचना , कियोस्क  के द्वारा  निर्धारित राशि से अधिक राशि लेने पर आपका कियोस्क  स्थाई रूप से बंद कर दिया जायेगा एवं कियोस्क/एल एस पी के विरुध FIR दर्ज करायी जाएगी |</font>&nbsp;
+		<font color="#00A300">LEEP 2016 service started under RTU kota </font>&nbsp;
+		<font color="#00A300">Pre admission application services started under Jai Narain Vyas University Jodhpur</font>&nbsp;		
+		<font color="green"> Centralized Admission for M. Tech. / M. Arch. (CAM-2016) &amp; Doctoral Admission Test (RTU-DAT)-2016_Services started under Rajasthan Technical University, Kota</font>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		<font color="green">Common Management Aptitude Test (CMAT 2016) &amp; Rajasthan Master in Computer Applications Admission Test (RMCAAT 2016) [College Registration]_Services started under Centre for eGovernance (CEG).</font>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		<!--<font color =red>Discom K number services are available on emitra</font>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-->				
+		<font color="green">New Emitra Help Desk E-mail newemitra.helpdesk@gmail.com</font>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		<font color="red">Emitra Support New landline phone Number is 01412221424/25</font>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		<font color="blue">Transport department services using saarthi portal are now available for jaipur kiosks</font>&nbsp;&nbsp;<a onclick="openFile(&#39;2016_01_14_Guideline_Transport_Dept_services_v2.pdf&#39;)" href="http://emitra.gov.in/home.jsp#">Click Here</a>&nbsp;&nbsp;&nbsp;&nbsp;
+		<font color="red">Ask a Doctor सेवा के पोस्‍टर&nbsp;</font><a onclick="openFile(&#39;Ask_a_doctor_Poster_v1.0.rar&#39;)" href="http://emitra.gov.in/home.jsp#">Click Here</a><font color="red">तथा विडियो निर्देशिका देख्‍ने के लिए क्लिक करें&nbsp;</font><a href="https://youtu.be/KvHgqGlwZwE" target="_blank">Click Here</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		
+		<!--<font color =blue>Counselling Fees for PG(Medical/Dental)-2016_Services started under Medical Education Department with last date 08-04-2016 (4:00 PM)</font>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-->
+<!--		<font color =blue>PTET 2016 and B.A.B.Ed 2016 / B.Sc. B.Ed 2016_ Services started under Univ. of Kota</font>&nbsp;&nbsp;<a onclick="openFile('PTET_NOTIC_01apr16.pdf')" href="#">Click Here</a>&nbsp;&nbsp;&nbsp;&nbsp; -->
+		
+<!--		<font color =blue>BSER-Making payment of penalty fee for Satrank entry-Service Started</font>&nbsp;&nbsp;<a onclick="openFile('satrank_online.pdf')" href="#">Click Here</a>&nbsp;&nbsp;&nbsp;&nbsp;-->
+		<!--<font color =blue>BSTC-2016(MDSU-Dept.): Last Date for fees deposition is extended to 5th April 2016</font>&nbsp;&nbsp;<a onclick="openFile('bstc_advt_31_03_2016final.pdf')" href="#">Click Here</a>&nbsp;&nbsp;&nbsp;&nbsp;-->
+		<!--<font color =blue>Recruitment for civil judge_cadre_2016_service started under dept.Rajasthan hight court. </font>&nbsp;&nbsp;<a onclick="openFile('Advertisment_RHC_Civil_Judge_2016.pdf')" href="#">Click Here</a>&nbsp;&nbsp;&nbsp;&nbsp;--> 
+		   <!--<font color =blue>BSTC 2016_Service Started Under MDSU Dept</font>&nbsp;&nbsp;<a onclick="openFile('bstc_advt_11_03_2016.pdf')" href="#">Click Here</a>&nbsp;&nbsp;&nbsp;&nbsp;--> 
+		   <!--<font color =red>Discom Server में तकनिकी कारणों के चलते बिजली बिल जमा कराने में समस्याएँ आ रही हैं, जनहित में बिजली बिभाग ने बिलों की अंतिम तिथि कल तक बढ़ा दी है|&nbsp;</font>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;--> 
+		   <!--<font color =red>PIMMAT 2016_Fees deposition services started under Univ.of Rajasthan department&nbsp;</font>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-->	
+		   
+		   
+		   <!--<font color =red>Matsya University, Alwar_Fee deposition for “Main Exam Fee 2016”_Service starting from 27-01-2016.Advertisement&nbsp;</font><a onclick="openFile('Advertisement_for_exam_form_19_1_2016.pdf')" href="#">Click Here</a><font color =red>Guidelines&nbsp;<a onclick="openFile('exam_fees_disha_nirdesh_19_1_2016.pdf')" href="#">Click Here</a>Token once issued for Matsya University, Alwar will not be cancelled</font>&nbsp;&nbsp;&nbsp;&nbsp;-->
+		   <!--<font color =blue>PayTm 31 Jan,2016 तक नेट बैंकिंग पर कोई शुल्क नही, साथ में Paytm बम्पर कैशबैक ऑफर,Emitra पर 20,000 रुपये से अधिक transaction पे 200 रुपये Cashback, 10000 से अधिक पर 100 रुपये, Paytm वॉलेट पे लॉग इन अनिवार्य.T&C's Apply. &nbsp;</font>&nbsp;&nbsp;-->
+		   
+		   <!--<font color =red>“Paytm घोषित करता है इस हफ्ते((Dec 29 –Dec 31) Emitra Kiosk Paytm द्वारा टॉप अप कर Smartphone जीतने वाले कीयोस्क धारकों के नाम”-1. Shri. Manish Babel  (955,Chittorgarh) 2.Shri. Anil Kumar  (1142, Bharatpur) 3.Shri Mahaveer Sharma (1721,Bikaner) .4. Shri Mukesh Kumar (916, Jalore) आप सबको ढेर सारी सुभकामनाएँ |&nbsp;</font>&nbsp;&nbsp;&nbsp;&nbsp;-->
+		   <!--<font color =red>“Paytm घोषित करता है इस हफ्ते((Dec 23 –Dec 29) Emitra Kiosk Paytm द्वारा टॉप अप कर Smartphone जीतने वाले कीयोस्क धारकों के नाम”-1. Shri. Kalp Gandhi  (645,Alwar) 2.Smt. Kusum Singh (875, Jaipur)  3.Shri Santosh Suthar (660,Bikaner) .4. Shri Dalip Kumar (883, SriGangaNagar) 5. Shri Narendra kumar Jindal ( 1157, Bharatpur). आप सबको ढेर सारी सुभकामनाएँ |&nbsp;</font>&nbsp;&nbsp;&nbsp;&nbsp;-->
+		   
+		   <!--<font color =red>PayTm  31 Dec,2015 तक नेट बैंकिंग पर कोई शुल्क नही, साथ में Samsung Galaxy J2 Smartphone जीतने का मौका &nbsp;</font><a onclick="openFile('PayTMp_Wallet.pdf')" href="#">Click Here</a>&nbsp;&nbsp;&nbsp;&nbsp;-->
+			<!--<font color =red>New Services_Recruitment of Teaching Faculty - 2015 has been started under RUHS&nbsp;</font>&nbsp;&nbsp;&nbsp;&nbsp;-->
+			<!--<font color =red>Maharaja Surajmal Brij University, Bharatpur की main exam fee-2016 की सेवाएं Emitra पर 11th Dec'15 से  प्रारम्भ कर दी जायेंगी | &nbsp;</font>&nbsp;&nbsp;&nbsp;&nbsp;-->
+			<!--<font color =red>University of Kota की main exam fee-2016 की सेवाएं Emitra पर प्रारम्भ कर दी गई है |&nbsp;</font>&nbsp;&nbsp;&nbsp;&nbsp;-->
+			
+			<!--<font color =red>Department of Mines and Geology-Fee Deposition Service has been started&nbsp;</font>&nbsp;&nbsp;&nbsp;&nbsp;-->
+			<!--<font color =red>University of Rajasthan की main exam fee-2016 की सेवाएं Emitra पर प्रारम्भ कर दी गई है |&nbsp;</font>&nbsp;&nbsp;&nbsp;&nbsp;-->
+			<!--<font color =red>Jail Warder,Forester and ForestGuard की recruitment की सर्विस के लिए प्राप्त किया गया टोकन निरस्त नही किया जा सकेगा |&nbsp;</font>&nbsp;&nbsp;&nbsp;&nbsp;-->
+		    <!--<font color =red>Recruitment of Patwaris-2015_Services started under RSMSSB from 10th Nov’15&nbsp;</font><a onclick="openFile('Patwar_Exam_2015_16_Advt..pdf')" href="#">Click Here</a>&nbsp;&nbsp;&nbsp;&nbsp;-->
+			<!--<font color =red>JDA service has been started for Online Registration for EWS, LIG AND MIG-A Flats&nbsp;</font>&nbsp;&nbsp;&nbsp;&nbsp;-->
+			<!--<font color =red>Main Exam fee 2016_Services has been started under MDSU Ajmer&nbsp;</font><a onclick="openFile('MDSU_vigyati_form_filling_2016.pdf')" href="#">Click Here</a>&nbsp;&nbsp;&nbsp;&nbsp;-->
+			<!--<font color =red>Recruitment of Security Guards_Services has been started under Rajasthan Police Department&nbsp;</font><a onclick="openFile('BHarti_2015.pdf')" href="#">Click Here</a>&nbsp;&nbsp;&nbsp;&nbsp;-->
+			<!--<font color ="#00A300">जाती प्रमाणपत्र  हेतु समय समय पर  जारी परिपत्र  हेतु ई-मित्र के HOME page  पर उपलव्ध लिंक  Guidelines and Circulars of CAST Certificate (JATI Pramanpatra)  का चयन कर प्राप्त कर सकते हैं |</font>&nbsp;&nbsp;&nbsp;&nbsp;-->
+			<!--<font color ="#00A300">New service Answer Booklet Copy has been started under BSER Ajmer Dept</font>&nbsp;&nbsp;&nbsp;&nbsp;-->
+			<!--<font color ="#00A300">सभी कीयोस्क धारकों को सूचित किया जाता है कि आज ही Biometric Device क्रय करना सुनिसिचत कर लें |</font>&nbsp;&nbsp;&nbsp;&nbsp;-->
+			<!--<font color ="#00A300">जयपुर,जोधपुर,अजमेर,कोटा,बूंदी,झालावार,टोंक और बारां  जिलों में ई-मित्र पर LED वितरण का कार्य प्रारम्भ कर दिया गया है</font>&nbsp;&nbsp;&nbsp;&nbsp;-->
+			<!--<font color ="#00A300">Junior Judicial Assistant and Clerk Grade - II_Services started under Rajasthan High Court</font><a onclick="openFile('INSTRUCTIONS-JJA-15.pdf')" href="#">Click Here</a>&nbsp;&nbsp;&nbsp;&nbsp;-->
+			<!--<font color ="#00A300"> Junior Personal Assistant and Stenographer Grade - II_Services started under Rajasthan High Court</font><a onclick="openFile('INSTRUCTIONS-JPA-15.pdf')" href="#">Click Here</a>&nbsp;&nbsp;&nbsp;&nbsp;-->
+			<!--<font color ="#00A300">LED Bulb के मांग तथा वितरण्‍ा की सेवायें ईमित्र पोर्टल पर प्रारम्‍भ कर दी गई है गाईडलाईन डाउनलोड करे</font><a onclick="openFile('EESL LED Bulb v2.0.rar')" href="#">Click Here</a>&nbsp;&nbsp;&nbsp;&nbsp;-->
+			<!--<font color ="#00A300">Token once issued for UG Srvs of Medical Education Department will not be cancelled</font>&nbsp;&nbsp;&nbsp;&nbsp;-->
+			<!--<font color ="#00A300">Deposition of Counselling Fees for UG (Medical/Dental) 2015_Srvs started under Medical Education Department</font>&nbsp;&nbsp;&nbsp;&nbsp;-->	
+			<!--<font color ="#00A300">Video Conferencing से connect होने के लिए पुराने software को  हटाये  और नया software download करने के लिए  </font><a onclick="openFile('peoplelinkv3.8.6.3.exe')" href="#">Click Here</a>&nbsp;&nbsp;&nbsp;&nbsp;-->
+			<!--<font color="#00A300">Social Justice Service has been started on emitra portal</font> <a href="#" onClick="openUrl('http://sje.rajasthan.gov.in')">Click Here</a> &nbsp;&nbsp;&nbsp;&nbsp;-->								
+			<!--<font color ="#00A300">PAYTM wallet की सुविधा online user के लिए प्रारम्भ कर दी गई है|</font><a onclick="openFile('Guidelines_for_online_user_Paytm wallet.pdf')" href="#">Click Here</a>&nbsp;&nbsp;&nbsp;&nbsp;-->			
+			<!--<font color ="#00A300">राशन के FOOD COUPEN वितरण की सेवा से  संबंधित GUIDELINE तथा DEVICE DRIVER डाउनलोड करें।</font><a onclick="openFile('Guideline_Food_Coupon_Services_v1.0.rar')" href="#">Click Here</a>&nbsp;&nbsp;&nbsp;&nbsp;-->			
+			<!--<font color ="#00A300">SBI MicroATM Payment Mode के लिए Guideline यहा से डाउनलोड करें।</font><a onclick="openFile('Guideline_Payment_Mode_MicroATM_SBI.pdf')" href="#">Click Here</a>&nbsp;-->
+			<!--<font color ="#00A300">SBI challen for UID(aadhar certified) operator/supervisor exam</font><a onclick="openFile('nseit_ChallanReciept.pdf')" href="#">Click Here</a>&nbsp;&nbsp;&nbsp;&nbsp;-->
+			<!--<font color ="#00A300">Kiosk List_Jaipur Metro Smart Cards</font><a onclick="openFile('List_of_Kiosks _in _Jaipur_City_Jaipur_Metro_Smart_Cards.pdf')" href="#">Click Here</a>&nbsp;&nbsp;&nbsp;&nbsp;-->  
+			<!--<font color="#00A300">SBI MircoATM के लिये कियोस्‍क विवरण Format डाउनलोड करे</font> <a onclick="openFile('Format_for_POS_MicroATM_KioskDtl_new.xls')" href="#">Click Here</a> &nbsp;&nbsp;&nbsp;&nbsp;-->
+			<!--<font color="#00A300">Deposit Registration and other fee service under Registration and Stamps department is now available in emitra</font><a onclick="openFile('Guideline_for_IGRS_Services.pdf')" href="#">Click Here</a> &nbsp;&nbsp;&nbsp;&nbsp;--> 
+			<!--<font color="#00A300">"जिन कियोस्कों पर OMT Tool Install नही किया गया था उन्हें Deactive किया गया है ऐसे सभी कियोस्क emitra.gov.in से नया OMT Tool Install करके mukesh5858@yahoo.co.in,gopi.gaurav955@gmail.com,9414225343,8302928486 पर सूचित करें कियोस्क पुनः चालू कर दिया जाएगा।".</font> &nbsp;&nbsp;&nbsp;&nbsp;--> 
+			<!--<font color="#00A300">Agriculture department license renewable services are now available on emitra</font>&nbsp;&nbsp;&nbsp;&nbsp;--> 
+			<!--<font color="#00A300">भामाशाह के संबंध में आधार नांमाकन एवं अाधार संख्‍या जानने के लिए यहां क्लिक करें</font> <a onclick="openFile('GuidelineforKnowEIDUID.pdf')" href="#">Click Here</a> &nbsp;&nbsp;&nbsp;&nbsp;-->
+			 
+			<font color="NAVY"><b>
+				<!--<font color="#00A300">CIRCULAR_Regarding delivery of RATION CARD services through emitra kiosk</font> <a onclick="openFile('CircularRation2015.pdf')" href="#">Click Here</a> &nbsp;&nbsp;&nbsp;&nbsp;-->
+				<!--<font color="#00A300">Token once issued for Univ. of Raj. (UoR) services will not be cancelled</font>&nbsp;&nbsp;&nbsp;&nbsp;-->
+				<!--<font color="#00A300">Kiosk List_Jaipur Metro Smart Cards</font> <a href="#" onClick="openUrl('List_of_Kiosks _in _Jaipur_City_Jaipur_Metro_Smart_Cards.pdf')">Click Here</a> &nbsp;&nbsp;&nbsp;&nbsp;--> 
+				<!--<font color="#00A300">BHAMASHAH NEW SERVICE ENTRY LINK</font> <a href="#" onClick="openUrl('http://164.100.222.69:8080/bhamashahqc/login')">Click Here</a> &nbsp;&nbsp;&nbsp;&nbsp;-->
+				<!--<font color="#00A300">Guidelines for Bhamashah Services(Login on Bhamashah portal)</font> <a onclick="openFile('GuidelineforBhamashahv11.pdf')" href="#">Click Here</a> &nbsp;&nbsp;&nbsp;&nbsp;--> 
+				<!--<font color="#00A300">त्रुटि रहित भामाशाह नामांकन सुनिशिचत करने क लिए धयान देने योग्य बिन्दु |</font>-->
+				<!--<font color="red"><a onclick="openFile('bhamashahyozana.PDF')" href="#">Click here </a></font> &nbsp;&nbsp;&nbsp;&nbsp;--> 
+				<!--<font color="#00A300">E-mitra पर भामाशाह योजना मे नये सदस्य जोड़ने एवं सदस्यों की त्रुटियों को सही करने की सेवा आरम्भ कर दी गई है. भामाशाह योजना से संबंधित महत्बपूर्ण सूचना |</font> <font color="red">CIRCULAR</font> <a onclick="openFile('Bhamashah_circular.pdf')" href="#">Click Here</a> <font color="red">GUIDELINE</font> <a onclick="openFile('GuidelineforBhamashahv12.pdf')" href="#">Click Here</a> &nbsp;&nbsp;&nbsp;&nbsp;--> 
+				<!--<font color="red">To login at Housing Board Portal.</font> <a href="#" onClick="openUrl('http://164.100.222.102:1001/SEPL.PWIMS.Estate.Web.UI/Applicant/Profile/LoginHome.aspx?isexternalproject=1&IsUser=1')">Click Here</a> &nbsp;&nbsp;&nbsp;&nbsp;-->
+				<!--<font color="red">Rajasthan Pollution control board services are availabe under emitra</font> <a onclick="openFile('GuidelineforRSPCBServices.pdf')" href="#">Click here </a> &nbsp;&nbsp;&nbsp;&nbsp;-->
+				<!--<font color="red">नये राशन कार्ड के लिए, राशन कार्ड में त्रुटि को ठीक कराने के लिए एवं राशन कार्ड का वितरण इत्यादि सेवाए शिघ्र ही Emitra से प्रारम्भ की जा रही हैं |</font> <a onclick="openFile('EmitraCircularRatesRationCardCorrigendum.PDF')" href="#">Click here </a> &nbsp;&nbsp;&nbsp;&nbsp;--> 
+				<!--<font color="red">कोई भी kiosk बिना OMT TOOL के नहीं चलेगा |</font> <a onclick="openFile('OMTRegistrationGuidelinenew.pdf')" href="#"> Click here </a> &nbsp;&nbsp;&nbsp;&nbsp; <font color="red">नामांतरण ,सीमाज्ञान,आपसी सहमती से बटवारे और आवासीय भूमी का पट्टा की आवेदन सेवायें सम्पूर्ण राजस्थान में प्रारम्भ कर दी गई हैं |</font> <a onclick="openFile('Downloadsupdate.rar')" href="#"> Click here </a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;--> 
+				<!--<font color="red">बिजली पानी के आबेदन की सेवायें बीकानेर और जयपुर जिलों के लिए प्रारम्भ कर दी गई हैं |</font> <a onclick="openFile('Downloads.rar')" href="#">Click here </a> &nbsp;&nbsp;&nbsp;&nbsp; <font color="red">All Emitra/CSCs can become IRCTC agents.</font> <a href="#" onClick="openUrl('http://164.100.40.23/irctc/vle_Irctc_regform.aspx')" target="_blank">Click here</a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;--> 
+				<!--<font color="red">Now, Reset Password facility available at LSP level. For reset password send email to your LSP.</font> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;--> 
+				<!--<font color="red">Service under Misc department (Digital Caste OBC for Central) has been started for all Districts.</font> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;--> 
+				<!--<font color="red">Kiosk पर कोई भी Receipts cancel नही होगी , Cancellation के लिए अपनी LSP से सम्पर्क करे |</font>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;--> 
+				<!--<font color="red">कीयोस्क को Active/Deactive केवल LSP की अधिक्रत E-Mail से प्राप्त Request के आधार पर ही किया जायेगा | अत: कीयोस्क धारक LSP से सम्पर्क करें |</font> <a onclick="openFile('lspcontactlist.xlsx')" href="#"> Click here</a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;--> 
+				<!--<font color="red">CSC-SPV की सभी सेवाए recharge and bill payment अब oxigen service (prepaid) मे प्रारम्भ कर दी गई है, और CSC-SPV Service बन्द कर दी गई है|</font>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;--> 
+				<!--<font color="red">जिन कियोस्कों की फण्ड ट्रान्सफर के बाद भी लिमिट रिलीज नही हुई है वो फण्ड ट्रान्सफर मीनू में आज के reconcile failed ट्रान्सफर में जाकर वेरीफाई करें |</font> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;--> 
+				<!--<font color="red">Police Clearance Certificate Services has been started For Guideline</font> <a onclick="openFile('policeclearance.pdf')" href="#"> Click here</a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-->
+				<!--<font color="red">Birth and Death Certificate Services has been started in all Districts.</font>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;--> 
+				<!--<font color="red">For Guideline</font> <a onclick="openFile('GuidelineMutationSimagyanDivisionandPatta.rar')" href="#"> Click here </a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-->
+				<!--<font color="red">Electricity,Water,Mobile bill,BSNL landline bills can also be deposited through Android and Windows Mobile For More Detail</font> <a onclick="openFile('Mobile_Apps_press_releas.docx')" href="#"> Click here </a> &nbsp;&nbsp;&nbsp;&nbsp;-->  
+				<!--<font color="red">राजस्थान संपर्क के माध्यम से जनता की सभी प्रकार की समस्याओ के निवारण के लिए ई मित्रा केंद्र पर भी आवेदन दर्ज कराने की सुविधा प्रारम्भ कर दी गई है!</font>--> 
+			</b></font>
+		</marquee>
+	</div>
+
+</div>
+			<div class="mastheadcontainer">
+				<div id="nav">
+					<table>
+						<tbody><tr>
+							<td>
+								<div class="loginbox">
+									<div class="boxhead">
+										<div class="boxheadtext">e-Mitra Log In</div>
+										<div class="boxheadicon"><img src="./e-Mitra_files/ico_head.gif" alt="Login"></div>
+									</div>
+								</div>
+								<div class="clear"></div>
+							</td>
+							<td>
+								<span style="padding: 0 0px">&nbsp;</span> 
+								<a href="http://emitra.gov.in/index.jsp"><img src="./e-Mitra_files/home_act.gif" width="58" height="22" border="0"></a>
+								<a href="http://emitra.gov.in/egovConstruction.jsp"><img src="./e-Mitra_files/egov.gif" width="96" height="22" border="0"> </a>
+								<a href="http://emitra.gov.in/latestConstruction.jsp"><img src="./e-Mitra_files/latestOrDownloads.gif" width="110" height="22" border="0"></a>
+								<a href="http://emitra.gov.in/home.jsp#" onclick="window.open(&#39;http://mis.emitra.gov.in/&#39;);"><img src="./e-Mitra_files/reports.gif" width="55" height="22" border="0"></a>&nbsp;
+								<img src="./e-Mitra_files/icon-help-yellow_mod.gif"><a href="javascript:openContactUsCtz(&#39;downloads/Partner_with_us.pdf&#39;);">PartnerWithUs</a>&nbsp;
+								
+								
+								<img src="./e-Mitra_files/icon-help-yellow_mod.gif"><a href="http://emitra.gov.in/home.jsp#" onclick="javascript:viewForms();" style="padding-left: 5px;">Download Forms</a>&nbsp;
+								<img src="./e-Mitra_files/icon-help-yellow_mod.gif"><a href="javascript:openContactUsCtz(&#39;downloads/Hindi_Toolkit_IME.exe&#39;);">IME Hindi TOOL</a>&nbsp;
+								<img src="./e-Mitra_files/icon-help-yellow_mod.gif"><a href="http://emitra.gov.in/Vacancies.jsp" target="_blank">Vacancies/Services</a>
+								<!--<font color =red><img src="images/New.gif" />&nbsp;</font><a onclick="openFile('Pension.rar')" href="#">Pensioner Sheet of All District</a><br/>-->
+							</td>
+						</tr>
+					</tbody></table>
+				</div>
+				<div class="clear"></div>
+			</div>
+		</div>
+		<div id="MainContainerHomePage">
+			<div id="HomeLeftNav">
+				
+				<div>
+
+
+
+
+
+
+
+
+
+
+
+
+	 
+
+
+	
+	<title>Login Page</title>
+	<link rel="stylesheet" href="./e-Mitra_files/master.css">
+	<script language="javascript" src="./e-Mitra_files/ajaxCommon.js.download"></script>
+	<script language="javascript" src="./e-Mitra_files/cleanSessionCommon.js.download"></script>
+	<script language="javascript" src="./e-Mitra_files/indexEvents.js.download"></script>
+	<script language="javascript" src="./e-Mitra_files/commonBrowserFunctions.js.download"></script>
+	<script language="javascript" src="./e-Mitra_files/appliactionFeature.js.download"></script>		
+	<script language="javascript" src="./e-Mitra_files/Abhishek.js.download"></script>
+	<script language="javascript" src="./e-Mitra_files/md5.js.download"></script> <!-- added by rahul -->
+	    
+	<script language="JavaScript">	
+	    function directToBillDetail(){
+			var openPath = ''+'/BillDetail.jsp';
+			window.open(openPath);	  
+	    }
+	</script>
+
+
+    
+	<form name="loginForm" id="frmLog" method="post" action="http://emitra.gov.in/login.do" onsubmit="checkform(this);" autocomplete="off"> <!-- Added By rahul-->
+		<input type="hidden" id="v1" name="v1" value="">                        	    
+		<input type="hidden" id="v2" name="v2" value=""> 
+		<input type="hidden" id="ran" name="ran" value="48reIADU2">
+		<div style="overflow:scroll;height:480px;width:100%;overflow:auto">
+			
+			
+			
+			
+			
+										
+			
+					<div style="margin-top:5px">&nbsp;<b><img src="./e-Mitra_files/New.gif"><a onclick="openFile(&#39;Rajasthan_Sampark_Brochure_19 May.pdf&#39;)" href="http://emitra.gov.in/home.jsp#">Rajasthan sampark Brochure </a></b></div>
+					<div style="margin-top:5px">&nbsp;<b><img src="./e-Mitra_files/New.gif"><a onclick="openFile(&#39;Bhamashah_Brochure_Double_Pgs.pdf&#39;)" href="http://emitra.gov.in/home.jsp#">Bhamashah Brochure </a></b></div>
+					<div style="margin-top:5px">&nbsp;<b><img src="./e-Mitra_files/New.gif"><a onclick="openFile(&#39;IT_Policy 2015.pdf&#39;)" href="http://emitra.gov.in/home.jsp#">Rajasthan E-governance IT &amp; ITES policy 2015 </a></b></div>
+					<div style="margin-top:5px">&nbsp;<b><img src="./e-Mitra_files/New.gif"><a onclick="openFile(&#39;IT_Platforms.pdf&#39;)" href="http://emitra.gov.in/home.jsp#">IT Platforms &amp; Building Blocks </a></b></div>
+			
+			<div style="margin-top:5px">&nbsp;<b><a onclick="openFile(&#39;Transaction_Processng_Fee.pdf&#39;)" href="http://emitra.gov.in/home.jsp#"> Bill Desk Service Charges </a></b></div>
+			<div style="margin-top:5px">&nbsp;<b><a onclick="openFile(&#39;Payzapp_Payment_Gateway.pdf&#39;)" href="http://emitra.gov.in/home.jsp#">HDFC Bank PayZapp Payment Gateway</a></b></div>
+			<div style="margin-top:5px">&nbsp;<b><a onclick="openFile(&#39;/payu.pdf&#39;)" href="http://emitra.gov.in/home.jsp#"> PayU Service Charges List </a></b></div>
+			<div style="margin-top:5px">&nbsp;<b><a onclick="openFile(&#39;/Pinelabs_PoS_Charges.pdf&#39;)" href="http://emitra.gov.in/home.jsp#"> PineLab Service Charges List </a></b></div>
+			<div style="margin-top:5px">&nbsp;<b><img src="./e-Mitra_files/New.gif"><a onclick="openFile(&#39;/Commission_Charges_Amazon_Service.pdf&#39;)" href="http://emitra.gov.in/home.jsp#">Amazon Commission Service Charge List</a></b></div>
+			<div style="margin-top:5px">&nbsp;<b><img src="./e-Mitra_files/New.gif"><a onclick="openFile(&#39;/New_SBI_PoS_Charges_5th_jan_list.pdf&#39;)" href="http://emitra.gov.in/home.jsp#">Revised SBI PoS Service Charges List</a></b></div>
+			<div style="margin-top:5px">&nbsp;<b><img src="./e-Mitra_files/New.gif"><a onclick="openFile(&#39;/PayTMp_Wallet.pdf&#39;)" href="http://emitra.gov.in/home.jsp#"> PayTm Payment Gateway Charges </a></b></div>
+			<div style="margin-top:5px">&nbsp;<b><img src="./e-Mitra_files/New.gif"><a onclick="openFile(&#39;/SBI_Supported_Cards.pdf&#39;)" href="http://emitra.gov.in/home.jsp#"> Cards supported on SBI PoS </a></b></div>
+			<div style="margin-top:5px">&nbsp;<b><img src="./e-Mitra_files/New.gif"><a onclick="openFile(&#39;/Pinelabs_Supported_Cards.pdf&#39;)" href="http://emitra.gov.in/home.jsp#"> Cards supported on Pinelabs PoS  </a></b></div>
+			<div style="margin-top:5px">&nbsp;<b><a onclick="openFile(&#39;/Kotak_Mahindra_Bank_Payment_Gateway_Service_Charges.pdf&#39;)" href="http://emitra.gov.in/home.jsp#"> Kotak Service Charges List </a></b></div>
+			<div style="margin-top:5px">&nbsp;<a href="http://mis.emitra.gov.in/verify_$$.jsp">Activation Link for online Registered User </a></div>
+			<div style="margin-top:5px">&nbsp;<a href="http://emitra.gov.in/home.jsp#" onclick="openUrl(&#39;http://ibs.rajasthan.gov.in/Home.aspx&#39;)" title="External website opens in a new window">Individual beneficiary scheme </a></div>  
+			<div style="margin-top:5px">&nbsp;<a href="http://emitra.gov.in/home.jsp#" onclick="openUrl(&#39;http://rajasthan.gov.in/&#39;)" title="Click here to open the official web portal of Govt. of Rajasthan">Rajasthan State Portal</a></div>
+			<div style="margin-top:5px">&nbsp;<a href="http://emitra.gov.in/home.jsp#" onclick="openUrl(&#39;http://passport.gov.in/&#39;)" title="External website opens in a new window">Passport and Visa Division</a></div>
+			<div style="margin-top:5px">&nbsp;<a href="http://emitra.gov.in/home.jsp#" onclick="openUrl(&#39;http://www.rsamb.rajasthan.gov.in/index.php?lang=en&#39;)" title="External Website opens in a new window">Mandi Online</a></div>
+			<div style="margin-top:5px">&nbsp;<a href="http://emitra.gov.in/home.jsp#" onclick="openUrl(&#39;http://sje.rajasthan.gov.in/Default.aspx?PageID=122&#39;)" title="External Website opens in a new window">Guidelines and Circulars of CAST Certificate</a></div>
+			<div style="margin-top:5px">&nbsp;<a href="http://emitra.gov.in/home.jsp#" onclick="directToBillDetail();"> Bill/Transaction Details</a></div>
+			<div style="margin-top:5px">&nbsp;<a href="http://emitra.gov.in/backoffice/applicationStatus.jsp"> On-line Verification Section</a></div>
+			<div style="margin-top:5px">&nbsp;<a href="http://emitra.gov.in/backoffice/crtVerification.jsp"> Exam Certificate Verification</a></div>
+			<div style="margin-top:5px">&nbsp;<a href="http://emitra.gov.in/backoffice/userDetails.jsp"> User Verification Section</a></div>			
+		</div><form=
+   	</form>
+	<!-- changed by tushar verma on14th aug 2013 -->
+	
+	<!-- end by tushar verma on14th aug 2013 -->    
+
+
+</div>
+				
+			</div>
+			<div id="BodyNew">
+				<div class="col1New_New">
+					<div class="topcurveBig_New"></div>
+					<div class="blackBox">
+						<div class="district">Portals</div>
+						<!-- 
+						<p style="font-size: 11px;">
+							E-Mitra is an ambitious E-governance initiative of Government of
+							Rajasthan (GoR) which is being implemented in all 33 Districts of
+							the state using Public-Private Partnership (PPP) model for
+							convenience and transparency to citizens in availing various
+							services of the Government and Private Sectors under a single
+							roof at their door steps using an e- platform. The services are
+							delivered via counters known as CSC (Common Service Center)
+							kiosks in Rural Areas and e-Mitra kiosks in urban areas and also
+							online via <a href="http://emitra.gov.in">www.emitra.gov.in</a>.
+							Hence, these counters provide services related to various
+							departments in an integrated and easily accessible manner to
+							people residing in rural as well as urban areas without any need
+							for running around in government offices. The project has been
+							operational since 2005. Initially it was functioning through a
+							Client Server based Application Software developed by Department
+							of IT&amp;C. In 2010, the old Client Server Application was
+							migrated to Web-based on-line e-Mitra application across all the
+							33 districts. Recently, a new generic module has been added to
+							e-Mitra portal which allows end to end application and delivery
+							of "Digitally Signed Certificates" such as Bonafide, Caste,
+							Income, Solvency etc.<br>
+							<font size="2">For more on e-Mitra please visit:<a href="downloads/Brochure_19 Jan II.pdf" target="_blank">(About e-Mitra )</a></font><br>
+						</p> 
+						-->
+						<div style="overflow:auto; height:300px;">
+							<p>
+							<font size="2" color="red"><img src="./e-Mitra_files/New.gif">MDSU,Ajmer Portal Login&nbsp;<a href="http://www.mdsuexam.net/MDSADM16/" target="_blank">Click Here</a> </font><br>
+							<font size="2" color="red"><img src="./e-Mitra_files/New.gif">"Discounted LED -New Consumers service is live on Emitra and can be availed through&nbsp;<a href="http://delp.cruxbytes.com/" target="_blank">Click Here</a> </font><br>
+							<!--<font size=2 color=red>Bhamashah Enrlllment & Seeding(only for Camps)&nbsp;<a href="http://164.100.222.168:8080/bhamashah/login" target="_blank">Click Here</a> </font><br>-->
+							<font color="red">Kiosk Wise Duplicate LED Transaction Cancel list &nbsp;</font><a onclick="openFile(&#39;Kiosk_wise_LED_Duplicate_Trns_Cancel_List.xls&#39;)" href="http://emitra.gov.in/home.jsp#">Click Here</a><br>
+								<font size="2" color="red">UIT Kota- Housing Scheme &nbsp;<a href="http://164.100.222.102:1002/SEPL.PWIMS.Estate.Web.UI/Applicant/Profile/LoginHome.aspx?isexternalproject=1" target="_blank">Click Here</a> </font><br>
+			<!--	<font size=2 color=red><img src="images/New.gif" />UIT Kota- Housing Scheme(Emitra Kiosk only)&nbsp;<a href="http://164.100.222.102:1002/SEPL.PWIMS.Estate.Web.UI/Applicant/Profile/LoginHome.aspx?isexternalproject=1" target="_blank">Click Here</a> </font><br>-->
+			
+								<font size="2" color="red">Department of Mines and Geology&nbsp;<a href="http://115.113.55.216/emitraDmg/jsp/login.jsp" target="_blank">Click Here</a> </font><br>
+								<font color="green">इफको किसान मोबाइल एप्प –<a href="http://rajasthan.gov.in/Pages/weatherandagromet.aspx" target="_blank">जानकारी</a>&nbsp;&nbsp;<a href="https://play.google.com/store/apps/details?id=com.IFFCOKisan&amp;hl=en" target="_blank">डाउनलोड</a></font><br>
+							    <font color="red">डॉक्टर से परमर्श (Ask A doctor)&nbsp;</font><a href="https://consultdradam.com/" target="_blank">Click Here</a>&nbsp;
+								<font size="2" color="red"> JEEVAN PRAMAAN&nbsp;<a href="http://pension.raj.nic.in/jeevan.html" target="_blank">Click Here</a> </font><br>
+								<font size="2" color="red">RATION CARD SERVICE&nbsp;<a href="http://164.100.153.82/RRCC/Login1.aspx" target="_blank">Click Here</a></font>&nbsp;<br>
+								
+								<!--<font color =red>Bhamashah Services (Enrollment/seeding/secondary entry)</font><a onclick="openFile('Bhamashah.docx')" href="#">Click Here</a><br/>-->
+								
+								<!--<font size=2 color=red> BHAMASHAH NEW SERVICE&nbsp;</font><a href="http://164.100.222.69:8080/bhamashahqc/login" target="_blank">Click Here</a><br>-->
+								
+								<font color="red">LED BULB DISTRIBUTION&nbsp;</font><a href="http://delp.cruxbytes.com/emitra" target="_blank">Click Here</a><br>
+								<font color="red">Social Justice Management System&nbsp;</font><a href="http://emitra.gov.in/home.jsp#" onclick="openUrl(&#39;https://sjms.rajasthan.gov.in/sjms/Login.aspx&#39;)">Click Here</a><br>								
+								
+								<font color="red">Social Justice Pension&nbsp;</font><a href="http://emitra.gov.in/home.jsp#" onclick="openUrl(&#39;http://rajssp.raj.nic.in&#39;)">Click Here</a><br>
+								<!-- <font color =red>Bhamashah Enrollment&nbsp;</font><a href="#" onClick="openUrl('http://164.100.222.69:8080/bhamashahqc/login')">Click Here</a><br>
+								<font color =red>Bhamashah Seeding/Secondary entry&nbsp;</font><a href="#" onClick="openUrl('http://164.100.222.168:8080/bhamashahseeding/login')">Click Here</a><br> -->
+								<font color="red">To login at Housing Board Portal&nbsp;</font> <a href="http://emitra.gov.in/home.jsp#" onclick="openUrl(&#39;http://164.100.222.102:1001/SEPL.PWIMS.Estate.Web.UI/Applicant/Profile/LoginHome.aspx?isexternalproject=1&amp;IsUser=1&#39;)">Click Here</a><br>	
+								<font color="red">To login at Labour Department Portal&nbsp;</font> <a href="http://emitra.gov.in/home.jsp#" onclick="openUrl(&#39;https://ldms.rajasthan.gov.in/&#39;)">Click Here</a><br>
+								<!--<font color ="#00A300">To Download New video conference software&nbsp;</font><a onclick="openFile('peoplelinkv3.8.6.3.exe')" href="#">Click Here</a><br/> -->
+								<!--<font color ="#00A300">DISTRICT SUPPLY OFFICER LIST</font><a onclick="openFile('District_Supply_Officer_Contact_List.pdf')" href="#">Click Here</a>&nbsp; -->
+								<!--<font color ="#00A300">Various Govt. college Application for Online Form "click"</font><a onclick="openFile('2015_06_04_College_Eduction.pdf')" href="#">Click Here</a>&nbsp; -->
+								<!--<font color =red><img src="images/New.gif" />"Ration Card Print / Surrender Certificate Print"</font><a onclick="openFile('2015_06_08_Surrender_Cert.pdf')" href="#">Click Here</a>&nbsp;<br> -->
+							</p>
+						</div>
+						<!-- 
+						<div>
+							<font size=2 color=blue>Hon'ble Chief Minister Smt. Vasundhara Raje visited at Bikaner &amp; Udaipur</font><br>
+							<marquee scrollamount="2" behavior="SCROLL" scrolldelay="1" direction="left" style="color: black; background-color: white;"
+								width="100%" onMouseOver="this.stop()" onMouseout="this.direction='left';this.start()" onClick="this.stop()" onDblClick="this.start();">
+								<a href="images/Gallery/img1.jpg" target="_blank"><img src="images/Gallery/img1_lite.jpg" width="95" height="50" style="border: 2px solid #FF0000; box-shadow: 10px 10px 5px #888;" /></a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+								<a href="images/Gallery/img2.jpg" target="_blank"><img src="images/Gallery/img2_lite.jpg" width="95" height="50" style="border: 2px solid #FF0000; box-shadow: 10px 10px 5px #888;" /></a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+								<a href="images/Gallery/img3.jpg" target="_blank"><img src="images/Gallery/img3_lite.jpg" width="95" height="50" style="border: 2px solid #FF0000; box-shadow: 10px 10px 5px #888;" /></a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+								<a href="images/Gallery/img4.jpg" target="_blank"><img src="images/Gallery/img4_lite.jpg" width="95" height="50" style="border: 2px solid #FF0000; box-shadow: 10px 10px 5px #888;" /></a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+								<a href="images/Gallery/img5.jpg" target="_blank"><img src="images/Gallery/img5_lite.jpg" width="95" height="50" style="border: 2px solid #FF0000; box-shadow: 10px 10px 5px #888;" /></a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+								<a href="images/Gallery/img6.jpg" target="_blank"><img src="images/Gallery/img6_lite.jpg" width="95" height="50" style="border: 2px solid #FF0000; box-shadow: 10px 10px 5px #888;" /></a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+								<a href="images/Gallery/img7.jpg" target="_blank"><img src="images/Gallery/img7_lite.jpg" width="95" height="50" style="border: 2px solid #FF0000; box-shadow: 10px 10px 5px #888;" /></a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+								<a href="images/Gallery/img8.jpg" target="_blank"><img src="images/Gallery/img8_lite.jpg" width="95" height="50" style="border: 2px solid #FF0000; box-shadow: 10px 10px 5px #888;" /></a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+								<a href="images/Gallery/img9.jpg" target="_blank"><img src="images/Gallery/img9_lite.jpg" width="95" height="50" style="border: 2px solid #FF0000; box-shadow: 10px 10px 5px #888;" /></a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+								<a href="images/Gallery/img10.jpg" target="_blank"><img src="images/Gallery/img10_lite.jpg" width="95" height="50" style="border: 2px solid #FF0000; box-shadow: 10px 10px 5px #888;" /></a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+								<a href="images/Gallery/img11.jpg" target="_blank"><img src="images/Gallery/img11_lite.jpg" width="95" height="50" style="border: 2px solid #FF0000; box-shadow: 10px 10px 5px #888;" /></a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+								<a href="images/Gallery/img12.jpg" target="_blank"><img src="images/Gallery/img12_lite.jpg" width="95" height="50" style="border: 2px solid #FF0000; box-shadow: 10px 10px 5px #888;" /></a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+								<a href="images/Gallery/img13.jpg" target="_blank"><img src="images/Gallery/img13_lite.jpg" width="95" height="50" style="border: 2px solid #FF0000; box-shadow: 10px 10px 5px #888;" /></a>
+							</marquee>
+						</div>
+						 -->
+ 						<!-- 
+						<div>
+							<font size="2" color=blue>Our Partners:</font>
+							<marquee scrollamount="2" behavior="SCROLL" scrolldelay="1"
+								direction="left" style="color: black; background-color: white;"
+								width="100%" onMouseOver="this.stop()"
+								onMouseout="this.direction='left';this.start()"
+								onClick="this.stop()" onDblClick="this.start();">
+								Ends By Rajesh
+								<table border="0" cellspacing="2" cellpadding="2">
+									<tr>
+										<td style='width: 80px; height: 50px; border: 1px solid black'><img src="images/AIRCEL.jpg" width="80" height="50" /></td>
+										<td style='width: 80px; height: 50px; border: 1px solid black'><img src="images/AIRTEL.jpg" width="80" height="50" /></td>
+										<td style='width: 80px; height: 50px; border: 1px solid black'><img src="images/AISECT logo.gif" width="80" height="50" /></td>
+										<td style='width: 80px; height: 50px; border: 1px solid black'><img src="images/ACHARIYA.jpg" width="80" height="50" /></td>
+										<td style='width: 80px; height: 50px; border: 1px solid black'><img src="images/AKSH.jpg" width="80" height="50" /></td>
+										<td style='width: 80px; height: 50px; border: 1px solid black'><img src="images/AKSH OPTIFIBRE LIMITED.jpg" width="80" height="50" /></td>
+										<td style='width: 80px; height: 50px; border: 1px solid black'><img src="images/AVVNL.jpg" width="80" height="50" /></td>
+										
+										<td style='width: 80px; height: 50px; border: 1px solid black'><img src="images/Basix 2.jpg" width="80" height="50" /></td>
+										<td style='width: 80px; height: 50px; border: 1px solid black'><img src="images/BIGTV.jpg" width="80" height="50" /></td>
+										<td style='width: 80px; height: 50px; border: 1px solid black'><img src="images/RBSE.jpg" width="80" height="50" /></td>
+										<td style='width: 80px; height: 50px; border: 1px solid black'><img src="images/BSNL.jpg" width="80" height="50" /></td>
+
+										<td style='width: 80px; height: 50px; border: 1px solid black'><img src="images/Calance Logo.jpg" width="80" height="50" /></td>
+										<td style='width: 80px; height: 50px; border: 1px solid black'><img src="images/CMS.jpg" width="80" height="50" /></td>
+										<td style='width: 80px; height: 50px; border: 1px solid black'><img src="images/COMTECH.jpg" width="80" height="50" /></td>
+
+										<td style='width: 80px; height: 50px; border: 1px solid black'><img src="images/DISH.jpg" width="80" height="50" /></td>
+
+										<td style='width: 80px; height: 50px; border: 1px solid black'><img src="images/FINO_LOGO.JPG" width="80" height="50" /></td>
+										<td style='width: 80px; height: 50px; border: 1px solid black'><img src="images/FPDD.jpg" width="80" height="50" /></td>
+
+										<td style='width: 80px; height: 50px; border: 1px solid black'><img src="images/Gujarat_Infotech_Ltd_(GIL Logo).jpg" width="80" height="50" /></td>
+										<td style='width: 80px; height: 50px; border: 1px solid black'><img src="images/Gramin Samajik Vikas Sansthan.jpg" width="80" height="50" /></td>
+										
+										<td style='width: 80px; height: 50px; border: 1px solid black'><img src="images/ICICI.jpg" width="80" height="50" /></td>
+										<td style='width: 80px; height: 50px; border: 1px solid black'><img src="images/Icontrol.jpg" width="80" height="50" /></td>
+										<td style='width: 80px; height: 50px; border: 1px solid black'><img src="images/IDEA.jpg" width="80" height="50" /></td>
+										<td style='width: 80px; height: 50px; border: 1px solid black'><img src="images/IKF.jpg" width="80" height="50" /></td>
+										<td style='width: 80px; height: 50px; border: 1px solid black'><img src="images/IMax.png" width="80" height="50" /></td>
+										<td style='width: 80px; height: 50px; border: 1px solid black'><img src="images/IRCTC.jpg" width="80" height="50" /></td>
+
+										<td style='width: 80px; height: 50px; border: 1px solid black'><img src="images/JDA.jpg" width="80" height="50" /></td>
+										<td style='width: 80px; height: 50px; border: 1px solid black'><img src="images/Jodhpur-Vidyut-Vitran-Nigam-Limited-JDVVNL.gif" width="80" height="50" /></td>
+										<td style='width: 80px; height: 50px; border: 1px solid black'><img src="images/JMC.jpg" width="80" height="50" /></td>
+										<td style='width: 80px; height: 50px; border: 1px solid black'><img src="images/JVVNL.jpg" width="80" height="50" /></td>
+										
+										<td style='width: 80px; height: 50px; border: 1px solid black'><img src="images/Kotak.png" width="80" height="50" /></td>
+
+										<td style='width: 80px; height: 50px; border: 1px solid black'><img src="images/mindtree_new_logo.jpg" width="80" height="50" /></td>
+										<td style='width: 80px; height: 50px; border: 1px solid black'><img src="images/MTS.png" width="80" height="50" /></td>
+
+										<td style='width: 80px; height: 50px; border: 1px solid black'><img src="images/Netlink.jpg" width="80" height="50" /></td>
+										<td style='width: 80px; height: 50px; border: 1px solid black'><img src="images/NICT-ISO 2008 mono.jpg" width="80" height="50" /></td>
+										<td style='width: 80px; height: 50px; border: 1px solid black'><img src="images/NICT-TPLL LOGO.jpg" width="80" height="50" /></td>
+										<td style='width: 80px; height: 50px; border: 1px solid black'><img src="images/NREGA.jpg" width="80" height="50" /></td>
+
+										<td style='width: 80px; height: 50px; border: 1px solid black'><img src="images/Oxigen logo - 3 lines.jpg" width="80" height="50" /></td>
+
+										<td style='width: 80px; height: 50px; border: 1px solid black'><img src="images/Paytm.jpg" width="80" height="50" /></td>
+										<td style='width: 80px; height: 50px; border: 1px solid black'><img src="images/PHED.jpg" width="80" height="50" /></td>
+
+										<td style='width: 80px; height: 50px; border: 1px solid black'><img src="images/RRB.jpg" width="80" height="50" /></td>
+										<td style='width: 80px; height: 50px; border: 1px solid black'><img src="images/Radiant Logo.png" width="80" height="50" /></td>
+										<td style='width: 80px; height: 50px; border: 1px solid black'><img src="images/RELIANCE.jpg" width="80" height="50" /></td>
+										<td style='width: 80px; height: 50px; border: 1px solid black'><img src="images/RHB.jpg" width="80" height="50" /></td>
+										<td style='width: 80px; height: 50px; border: 1px solid black'><img src="images/RPSC.jpg" width="80" height="50" /></td>
+										<td style='width: 80px; height: 50px; border: 1px solid black'><img src="images/RSRTC.jpg" width="80" height="50" /></td>
+
+										<td style='width: 80px; height: 50px; border: 1px solid black'><img src="images/STTL_New_Logo.jpg" width="80" height="50" /></td>
+										<td style='width:80px; height:50px; border:1px solid black'><img src="images/sub k logo.PNG" width="80" height="50" /></td>
+
+										<td style='width: 80px; height: 50px; border: 1px solid black'><img src="images/TATA.jpg" width="80" height="50" /></td>
+										<td style='width: 80px; height: 50px; border: 1px solid black'><img src="images/TATASKY.jpg" width="80" height="50" /></td>
+										<td style='width: 80px; height: 50px; border: 1px solid black'><img src="images/Transline logo.jpg" width="80" height="50" /></td>
+
+										<td style='width: 80px; height: 50px; border: 1px solid black'><img src="images/VIRAMATI.jpg" width="80" height="50" /></td>
+										<td style='width: 80px; height: 50px; border: 1px solid black'><img src="images/vision logo2.jpg" width="80" height="50" /></td>
+										<td style='width: 80px; height: 50px; border: 1px solid black'><img src="images/VODAFONE.jpg" width="80" height="50" /></td>
+										<td style='width: 80px; height: 50px; border: 1px solid black'><img src="images/Vakrangee.jpg" width="80" height="50" /></td>
+										<td style='width: 80px; height: 50px; border: 1px solid black'><img src="images/Zephyr.png" width="80" height="50" /></td>
+									</tr>
+									<tr align="center" valign="middle"
+										style="font-size: xx-small; font-family: Tahoma; font-weight: bold;">
+										<td style='width: 80px'>AIRCEL</td>
+										<td style='width: 80px'>AIRTEL</td>
+										<td style='width: 80px'>AISECT</td>
+										<td style='width: 80px'>ACHARIYA</td>
+										<td style='width: 80px'>AKSH OPTIFIBRE</td>
+										<td style='width: 80px'>AKSH OPTIFIBRE LIMITED</td>
+										<td style='width: 80px'>AVVNL</td>
+
+										<td style='width: 80px'>Basix</td>
+										<td style='width: 80px'>BIGTV</td>
+										<td style='width: 80px'>BSER</td>
+										<td style='width: 80px'>BSNL</td>
+
+										<td style='width: 80px'>Calance</td>
+										<td style='width: 80px'>CMS Computers Ltd</td>
+										<td style='width: 80px'>COMTECH Institute Of Technology</td>
+
+										<td style='width: 80px'>DISH TV</td>
+
+										<td style='width: 80px'>FINO</td>
+										<td style='width: 80px'>Food &amp; PDD</td>
+									
+										<td style='width: 80px'>GIL</td>
+										<td style='width: 80px'>Gramin Samajik Vikas Sansthan</td>
+
+										<td style='width: 80px'>ICICI Prudential</td>
+										<td style='width: 80px'>iControl IPTV</td>
+										<td style='width: 80px'>IDEA Cellular</td>
+										<td style='width: 80px'>IKF Technologies</td>
+										<td style='width: 80px'>IMAX</td>
+										<td style='width: 80px'>IRCTC</td>
+
+										<td style='width: 80px'>JDA</td>
+										<td style='width: 80px'>Jd VVNL</td>
+										<td style='width: 80px'>JMC</td>
+										<td style='width: 80px'>JVVNL</td>
+										
+										<td style='width: 80px'>KOTAK</td>
+
+										<td style='width: 80px'>Mindtree Ltd</td>
+										<td style='width: 80px'>MTS</td>
+
+										<td style='width: 80px'>Netlink</td>
+										<td style='width: 80px'>NICT</td>
+										<td style='width: 80px'>NICT-TPL</td>
+										<td style='width: 80px'>NREGA</td>
+
+										<td style='width: 80px'>Oxigen</td>
+
+										<td style='width: 80px'>Paytm</td>
+										<td style='width: 80px'>PHED</td>
+
+										<td style='width: 80px'>Rajasthan Revenue Board</td>
+										<td style='width: 80px'>Radiant</td>
+										<td style='width: 80px'>Reliance Communications</td>
+										<td style='width: 80px'>RHB</td>
+										<td style='width: 80px'>RPSC</td>
+										<td style='width: 80px'>RSRTC</td>
+
+										<td style='width: 80px'>Silver Touch</td>
+										<td style='width: 80px'>sub-k</td>
+
+										<td style='width: 80px'>Tata Indicom</td>
+										<td style='width: 80px'>TATA Sky</td>
+										<td style='width: 80px'>Transline</td>
+
+										<td style='width: 80px'>Viramati S/W Tele</td>
+										<td style='width: 80px'>vision</td>
+										<td style='width: 80px'>Vodafone</td>
+										<td style='width: 80px'>Vakrangee</td>
+										<td style='width: 80px'>Zephyr</td>
+									</tr>
+								</table>
+							</marquee>
+						</div> 
+						-->
+					</div>
+					<div class="botcurveBig_New"></div>
+					
+					<div class="topcurveBig_New"></div>
+					<div class="blackBox" style="overflow:auto; height:200px;">
+						<div class="district">Guidelines</div>
+						<div>
+							<p>
+							<!--<font color =green><img src="images/New.gif" />Bhamashah Guideline for New E-Mitra &nbsp;</font><a onclick="openFile('Bhamashah_Guide.pptx')" href="#">Click Here</a><br/>-->
+							<font color="green"><img src="./e-Mitra_files/New.gif">Employment department guideline&nbsp;</font><a onclick="openFile(&#39;Guideline_For_Employment_department.pdf&#39;)" href="http://emitra.gov.in/home.jsp#">Click Here</a><br>
+							<font color="green"><img src="./e-Mitra_files/New.gif">Guideline For Ration Card Services&nbsp;</font><a onclick="openFile(&#39;Guideline_Ration_Card_Services.pdf&#39;)" href="http://emitra.gov.in/home.jsp#">Click Here</a><br>
+							<font color="green"><img src="./e-Mitra_files/New.gif">Supplementary Fee 2016_Services&nbsp;</font><a onclick="openFile(&#39;Supplementary_UOR.pdf&#39;)" href="http://emitra.gov.in/home.jsp#">Click Here</a><br>
+							<font color="green"><img src="./e-Mitra_files/New.gif">Palanhaar Registration v1&nbsp;</font><a onclick="openFile(&#39;2016_06_06_Guideline_Palanhaar_Yoghna_v1.pdf&#39;)" href="http://emitra.gov.in/home.jsp#">Click Here</a><br>
+							<font color="green"><img src="./e-Mitra_files/New.gif">PineLab POS User Manual&nbsp;</font><a onclick="openFile(&#39;EMitra Guidelines_PinelabsPOS.7z&#39;)" href="http://emitra.gov.in/home.jsp#">Click Here</a><br>
+							<font color="green"><img src="./e-Mitra_files/New.gif">Kiosk New Commission Structure&nbsp;</font><a onclick="openFile(&#39;Guidelines_New_Commission_Structure.pdf&#39;)" href="http://emitra.gov.in/home.jsp#">Click Here</a><br>
+							<font color="green"><img src="./e-Mitra_files/New.gif">Transport department services (Saarthi )&nbsp;</font><a onclick="openFile(&#39;2016_01_14_Guideline_Transport_Dept_services_v2.pdf&#39;)" href="http://emitra.gov.in/home.jsp#">Click Here</a><br>
+							<font color="green">Kiosk-SSO Login Guideline&nbsp;</font><a onclick="openFile(&#39;2016_01_25_Guideline_Kiosk_SSO_Loginv3.pdf&#39;)" href="http://emitra.gov.in/home.jsp#">Click Here</a><br>
+							<font color="green">Guideline Industries BRSY v2&nbsp;</font><a onclick="openFile(&#39;2016_03_15_Guideline_Industries_BRSY_v2.pdf&#39;)" href="http://emitra.gov.in/home.jsp#">Click Here</a><br>
+							<font color="green">Guideline Industries Artisan Weaver v2&nbsp;</font><a onclick="openFile(&#39;2016_03_15_Guideline_Industries_Artisan_Weaver_v2.pdf&#39;)" href="http://emitra.gov.in/home.jsp#">Click Here</a><br>
+							<font color="green">Amazon:Guidelines&nbsp;</font><a onclick="openFile(&#39;Amazon_New_SOP_Hindi.zip&#39;)" href="http://emitra.gov.in/home.jsp#">Click Here</a><br>
+							<font color="green">Bhamashah Card Comission&nbsp;</font><a onclick="openFile(&#39;KIOSK_WISE_CARD_STATUS_REPORT.xlsx&#39;)" href="http://emitra.gov.in/home.jsp#">Click Here</a><br>
+							<!--<font color =green>Pensioner Data Jan-2016&nbsp;</font><a onclick="openFile('Pension.rar')" href="#">Click Here</a><br/>-->
+							<font color="green">Bhamashah Enrollment &amp; Seeding(only for Camps) &nbsp;</font><a onclick="openFile(&#39;Online-Seeding-Camp-User-Manual.pdf&#39;)" href="http://emitra.gov.in/home.jsp#">Click Here</a><br>
+							<font color="green">BHAMASHAH Enrollment &amp; Seeding (Through Ration Card)&nbsp;</font><a href="http://mis.emitra.gov.in/Reports/rpt_ration_beneficiary_dist.jsp" target="_blank">Click Here</a><br>
+							<font color="green">BHAMASHAH Beneficiary DATA (Pension, NAREGA, Scholarship Etc&nbsp;</font><a href="http://mis.emitra.gov.in/Reports/rpt_bhamashah_beneficiary_dist1.jsp" target="_blank">Click Here</a><br>
+							<font color="red">Emitra Water Bills Extension Due Date Guideline for Payment&nbsp;</font><a onclick="openFile(&#39;Extension_in_due_date.PDF&#39;)" href="http://emitra.gov.in/home.jsp#">Click Here</a><br>
+							<font color="red">Department of Mines and Geology Guideline&nbsp;</font><a onclick="openFile(&#39;Department_of_Mines_and_Geology_Guideline.pdf&#39;)" href="http://emitra.gov.in/home.jsp#">Click Here</a><br>
+							<!--<font color =red><img src="images/New.gif" />Pension Data-All District wise&nbsp;</font><a onclick="openFile('Pension_Data_All_District wise.rar')" href="#">Click Here</a><br/>-->
+							<!--<font color =red><img src="images/New.gif" />Pension Data - BPL District wise&nbsp;</font><a onclick="openFile('Pension_Data_BPL_District_wise.rar')" href="#">Click Here</a><br/>-->
+							<!--<font color =red><img src="images/New.gif" />Jeevan Praman Patra Service Guideline&nbsp;</font><a onclick="openFile('Jeevan_Praman_Patra_Service v2.0.pdf')" href="#">Click Here</a><br/>-->
+							<!--<font color =red><img src="images/New.gif" />Digital Certficate Guideline v2.0&nbsp;</font><a onclick="openFile('Bonafide_PPT_Tehsil_Level_as_on_26_Oct_2015_v2.0.pptx')" href="#">Click Here</a><br/>-->
+							<!--<font color =red><img src="images/New.gif" />Guideline for HDFC Bank PayZapp Payment Gateway&nbsp;</font><a onclick="openFile('Payzapp_Payment_Gateway.pdf')" href="#">Click Here</a><br/>-->
+							<!--<font color =red><img src="images/New.gif" />Guideline PineLab POS operation on emitra&nbsp;</font><a onclick="openFile('Guideline_PineLab_POS_operation_at_emitra_v2.0.rar')" href="#">Click Here</a><br/>-->
+							<!--<font color =red><img src="images/New.gif" />Guideline Related to Ration Card pendency Clear&nbsp;</font><a onclick="openFile('Guideline_Pendency_Clear_09_09_15.pdf')" href="#">Click Here</a><br/>-->
+							<!--<font color =red><img src="images/New.gif" />Process for distribution of Pinelabs PoS terminals to kiosks in camps&nbsp;</font><a onclick="openFile('Enclosure_PoS_terminals_to_kiosks.pdf')" href="#">Click Here</a><br/>-->
+							<font color="red"><img src="./e-Mitra_files/New.gif">Download pine-labs machine Controller and silicon driver &nbsp;</font><a onclick="openFile(&#39;PAD_Controller.rar&#39;)" href="http://emitra.gov.in/home.jsp#">PAD Controller</a>&nbsp;&nbsp;	<a onclick="openFile(&#39;Silicon_Drivers.rar&#39;)" href="http://emitra.gov.in/home.jsp#">Silicon Driver</a><br>					<font color="red"><img src="./e-Mitra_files/New.gif">Download video guideline for E-mitra USB,PAD Controller</font><a onclick="openFile(&#39;Guideline_video.rar&#39;)" href="http://emitra.gov.in/home.jsp#">Click here</a><font color="red"> Java Policy<a onclick="openFile(&#39;java.policy.zip&#39;)" href="http://emitra.gov.in/home.jsp#">Click here</a></font><br>
+							
+							
+							<!--<font color ="#00A300">Ration Card FOOD COUPEN GUIDELINE तथा DEVICE DRIVER</font><a onclick="openFile('Guideline_Food_Coupon_Services_v1.0.rar')" href="#">Click Here</a></br>
+							<font color ="#00A300">PineLabs MicroATM के लिए java.policy file यहा से डाउनलोड करें।</font><a onclick="openFile('java.policy')" href="#">Click Here</a></br>-->
+							<!--<font color =red><img src="images/New.gif" />SBI MicroATM Payment Mode के लिए Guideline यहा से डाउनलोड करें।</font><a onclick="openFile('Guideline_Payment_Mode_MicroATM_SBI.pdf')" href="#">Click Here</a></br>-->
+							<!--<font color="#00A300">Police Clearance Certificate Services Guideline</font> <a onclick="openFile('policeclearance.pdf')" href="#"> Click here</a></br>-->
+							<!--<font color="#00A300">Ration Card Circular guideline</font> <a onclick="openFile('EmitraCircularRatesRationCardCorrigendum.PDF')" href="#">Click here </a></br>-->
+							<!--<font color="#00A300">Rajasthan Pollution control board services guideline</font> <a onclick="openFile('GuidelineforRSPCBServices.pdf')" href="#">Click here </a></br>-->
+							<!--<font color="#00A300">Add New Members in Bhamashah guideline</font> <font color="red">CIRCULAR</font> <a onclick="openFile('Bhamashah_circular.pdf')" href="#">Click Here</a> <font color="red">GUIDELINE</font> <a onclick="openFile('GuidelineforBhamashahv12.pdf')" href="#">Click Here</a></br>-->
+							<!--<font color="#00A300">CIRCULAR_Regarding delivery of RATION CARD </font> <a onclick="openFile('CircularRation2015.pdf')" href="#">Click Here</a></br>-->	
+							</p>
+						</div>
+					</div>
+					<div class="botcurveBig_New"></div>
+				</div>	
+				
+
+
+
+
+
+
+
+
+
+
+    
+    <script language="JavaScript" type="text/JavaScript">
+	    var fileName;
+	    function openFile(fileName){
+	        var window_dimensions = "toolbars=no,menubar=no,location=no,scrollbars=yes,resizable=yes,status=yes";
+	        var path="downloads/"+fileName;
+	        window.open(path,"_blank",  window_dimensions);
+	    }
+	    function directTo(){
+	        var index = document.getElementById('district').selectedIndex;
+	        if(index>0){
+		        var distCd = document.getElementById('district').options[index].value;
+		        var distNm = document.getElementById('district').options[index].text;
+		        var pageURL=""+"/DistrictDetails.jsp";
+		        pageURL += "?distCd="+distCd;
+		        pageURL += "&distNm="+distNm;
+		        if(distCd != '#'){
+		            //forwardToDifferentPageForDistict(value1);
+		            window.open(pageURL,"_self");
+		        }	        	
+	        }
+	    }
+   </script>
+   <style type="text/css">
+       #apDiv1 {
+           position:absolute;
+           left:1086px;
+           top:140px;
+           width:162px;
+           height:360px;
+           z-index:1;
+       }
+ a.right {
+   display: inline-block; 
+   width: 100%;
+   margin-left: 190px;
+}
+
+   </style>
+
+
+
+<div class="homeCol1">
+						
+			<iframe id="frame" src="./e-Mitra_files/MapPage.html" width="598" height="300" target="_blank" style=" clip:rect(130px,600px,530px,100px);
+				top:400px; left:740px;" border="0px">
+			</iframe>
+<a class="right" href="http://gis.rajasthan.gov.in/emitracitizen/" target="_blank" align="right">Full Map</a>
+		</div>	
+	<div class="homeCol2">
+		<div class="topcurve1"></div>
+		<div class="homeGrayBox1">
+			<div class="h2gray">Effective Governance better citizen services.</div>
+			<center>
+				<a href="./e-Mitra_files/NIK_3066.jpg" target="_blank">
+					<img src="./e-Mitra_files/NIK_3066.jpg" width="250" height="150" style="border: 2px solid #FF0000; box-shadow: 10px 10px 5px #888;">
+				</a>
+			</center>		
+			<!--<marquee onMouseOver="this.stop()" scrollamount="1" scrolldelay="1" direction="up" onMouseout="this.direction='up';this.start()" onClick="this.stop()" onDblClick="this.start(); this.direction='up'" height="240px;">
+			 <font color="red">
+				<b>Below New Services have been started of Transport Department-</b></font>
+				<div class="tagline">
+					<font color="blue">
+						<b>
+							"Addition of New Category to Driving License"<br>					
+							"Change of Residence in Registration Certificate (RC)"<br>
+							"Duplicate Driving License"<br>
+							"Duplicate Registration Certificate (RC)"<br>
+							"Issue International Driving Permit"<br>
+							"Learner Licence"<br>
+							"New Driving Licence"<br>
+							"Renewal of Driving License"<br>
+							"Termination of Hypothecation in Registration Certificate (RC)"
+						</b>
+					</font>
+				</div>
+				<DIV class=space></DIV>
+			
+				<div class="tagline">
+				 	<font color="red"><b>New services of DRDA Department have been started under SSDG-</b></font>
+				</div>
+				<DIV class=space></DIV>
+
+				 <div class="tagline">
+				 	<font color="blue"><b>"Application for Nirmal Bharat Abhiyan Guideline"<a onclick="openFile('Application for Nirmal Bharat Abhiyan.pdf')" href="#"> Click here </a></b></font>
+				 </div>
+				<DIV class=space></DIV>
+
+				 <div class="tagline">
+				 	<font color="blue"><b>"Utilization certificate under Nirmal Bharat Abhiyan Guideline"<a onclick="openFile('Utilization certificate under Nirmal Bharat Abhiyan.pdf')" href="#"> Click here </a></b></font>
+				 </div>
+				<DIV class=space></DIV>
+				
+				 <div class="tagline">
+					<font color="red"><b>"New services of SC/ST Development Corporation Department have been started under SSDG"<a onclick="openFile('ScheduledCastesScheduledTribesforPopeYajna.pdf')" href="#"> Click here </a></b></font>
+				</div>
+				<DIV class=space></DIV>
+	
+				 <div class="tagline">
+					<font color="blue"><b>"Scheduled Castes Scheduled Tribes for Pope Yojna Guideline"<a onclick="openFile('ScheduledCastesScheduledTribesforPopeYajna.pdf')" href="#"> Click here </a></b></font>
+				</div>
+				<DIV class=space></DIV>
+
+				<div class="tagline">
+					<font color="blue"><b>"Application for skill development training Guideline"<a onclick="openFile('Applicationforskilldevelopmenttraining.pdf')" href="#"> Click here </a></b></font>
+				</div>
+				<DIV class=space></DIV>
+
+				<div class="tagline">
+					<font color="red"><b>New services of Tribal Area Development Department have been started under SSDG<a onclick="openFile('HelpFileCitizenResearchFellowship.pdf')" href="#"> Click here </a></b></font>
+				</div>
+				<DIV class=space></DIV>
+
+				<div class="tagline">
+					<font color="blue"><b>"Application for Economic Help to Tribal for Research Fellowship Guideline"<a onclick="openFile('HelpFileCitizenResearchFellowship.pdf')" href="#"> Click here </a></b></font>
+				</div>
+				<DIV class=space></DIV>
+
+				<div class="tagline">
+					<font color="blue"><b>"Application for Award to National &amp; International Level Tribal Sports Persons Guideline"<a onclick="openFile('HelpFileCitizenResearchSportsPerson.pdf')" href="#"> Click here </a></b></font>
+				</div>
+				<DIV class=space></DIV>
+				
+				<div class="tagline">
+					<font color="blue"><b>"Application for Economic Help to Tribal for PMT/PET/ IIT Coaching Guideline"<a onclick="openFile('HelpFileCitizenTADIIT.pdf')" href="#"> Click here </a></b></font>
+				</div>
+				<DIV class=space></DIV>
+                                
+				<div class="tagline">
+					<font color="blue"><b>"Application for Rent Reimbursement for College Tribal Students Guideline"<a onclick="openFile('HelpFileCitizenTADRent.pdf')" href="#"> Click here </a></b></font>
+				</div>
+				<DIV class=space></DIV>
+
+				<div class="tagline">
+					<font color="blue"><b>"Application for Free Scooty Distribution to Tribal Girls Guideline"<a onclick="openFile('HelpFileCitizenTADScooty.pdf')" href="#"> Click here </a></b></font>
+				</div>
+				<DIV class=space></DIV>
+                                
+				<div class="tagline">
+					 <font color="red"><b>"Digital Certificate Download at Kiosk Level Guideline"<a onclick="openFile('DigitalCertificateDelivered.pdf')" href="#"> Click here </a></b></font>
+				</div>
+				<DIV class=space></DIV>
+				
+				<div class="tagline">
+					<font color="blue"><b>"List of newly selected LSPs under eMitra project along with their kiosk allocation plan"<a onclick="openFile('LSP_District.xls')" href="#"> Click here </a></b></font>
+				</div>
+				<DIV class=space></DIV>
+				
+				<div class="tagline">
+					<font color="red"><b>राजस्थान रोडवेज की बस टिकिट बुकिंग सुबिधा अब ई-मित्र पर उपलब्ध है!<a onclick="openFile('RSRTC_Ticket_Booking.pdf')" href="#"> Click here </a></b></font>
+				</div>
+				<DIV class=space></DIV>
+				
+				<div class="tagline">
+					<font color="blue"><b>सभी कीओस्क धारक IRCTC का रजिस्ट्रेशन करने के लिए यहाँ क्लिक करे<a target="_blank" href="http://164.100.40.23/irctc/vle_Irctc_regform.aspx/"> Click here </a></b></font>
+				</div>
+				<DIV class=space></DIV>
+				
+				<div class="tagline">
+					<font color="blue"><b>SMS अस्पताल की जाँच रिपोर्टें प्राप्त करें<a target="_blank" href="http://14.139.233.90/AHIMSWeb/"> Click here </a></b></font>
+				</div>
+				<DIV class=space></DIV>
+				
+				<div class="tagline">
+					<font color="blue"><b>1 July 2014 से सभी जिलों में बिजली के बिल जमा करने की दर  5 रुपये + सर्विस टैक्स तय कर दी गयी है!</b></font>
+				</div>
+				<DIV class=space></DIV>
+				
+				<div class="tagline">
+					<font color="blue"><b>1 जुलाई 2014 से डिजिटली हस्ताक्षरित प्रमाणपत्र (DSC) सेवाएं और SSDG की 26 आवेदन की ऑनलाइन सेवाओं का सेवा शुल्क नागरिक / आवेदक (सरकार के बजाय) द्वारा वहन किया जाएगा!</b></font>
+				</div>
+				<DIV class=space></DIV>				
+				
+				<div class="tagline">
+					<font color="black"><b>"DISH TV, MTS, ICICI, RTI Services have been started in Postpaid Mode For All Kiosk"</b></font>
+				</div>	
+				<DIV class=space></DIV>
+							
+				<div class="tagline">
+					<font color="blue"><b>“CSC CMS के सभी VLE इन्‍टरनेट कनेक्‍शन लगवाने हेतु अपनी निम्‍न जानकारी internetforcsc@gmail.com पर मेल करे District, Block, Village, Mobile No.“</b></font>
+				</div>
+				<DIV class=space></DIV>
+				
+				<div  class="tagline">
+					<font color="red"><b>" 12 Dec 2013 से e-Mitra departmental report में केवल summary report और combined single report ही उपलब्ध होंगी! Detailed report, Cancel report और Deactive Kiosk Report हटा दी गयी है!"</b></font>
+				</div>
+				<DIV class=space></DIV>
+
+			
+				<div class="tagline">
+					<font color="blue"><b>If you don't get the token number in online transaction after payment, please check your transaction history . If your transaction is not there in transaction history , amount will be automatically refunded to your account within 5 to 7 working days.</b></font>
+				</div>
+				<DIV class=space></DIV>
+				
+				<div class="tagline">
+					<font color="blue"><b>if e-Mitra portal is not open with emitra.gov.in or slow then open with this IP<a href="http://164.100.222.145/" target="_parent"> 164.100.222.145</a></b></font>
+				</div>
+				<DIV class=space></DIV>
+				
+				<div id="blink1" class="tagline" style="text-align:center;color:red">
+					<b>Key Correction Facility is not Applicable For Online Transactions.</b>
+				</div>						
+				<DIV class=space></DIV>
+				
+				<div class="tagline">
+					<font color="black"><b>Download OMT TOOL Setup New.<a onclick="openFile('Registration_Win.exe')" href="#"> Click here</a></b></font>
+				</div>
+				<DIV class=space></DIV>
+			
+			<!-- ------------------------------------------------------------------------------------- -->
+				
+							<div class="tagline">
+								<font color="blue"><a href="http://emitra.gov.in/home.jsp#" onclick="openFile(&#39;DMP Printing Control Guideline.pdf&#39;)">DMP Printing Control Guideline</a></font>
+							</div>
+							<div class="space"></div>
+				
+							<div class="tagline">
+								<font color="blue"><a href="http://emitra.gov.in/home.jsp#" onclick="openFile(&#39;Guideline for Know EID UID.pdf&#39;)">Guidelines_Know EID UID Details for Bhamashah </a></font>
+							</div>
+							<div class="space"></div>
+								
+			<!-- ------------------------------------------------------------------------------------- -->
+			--&gt;
+		</div>
+		<div class="botcurve1">
+			<div class="clear"></div>
+		</div>
+	</div>
+	<div class="homeCol3">
+		<div class="topcurve1"></div>
+		<div class="homeGrayBox">
+			<div class="h2gray">Your District</div>
+			<div class="txtgray">Select a district to know eMitra/CSC Kiosk in your District</div>
+			<!-- Updated By Rajesh Kumawat for UI Maintainance | Date : 07-08-2013 -->
+			<div class="space"></div>
+			<select id="district">
+				<option selected="" value="#">Select District</option>
+			    <option value="21">Ajmer</option>
+				<option value="6">Alwar</option>
+				<option value="28">Banswara</option>
+				<option value="31">Baran</option>
+				<option value="17">Barmer</option>
+				<option value="7">Bharatpur</option>
+				<option value="24">Bhilwara</option>
+				<option value="3">Bikaner</option>
+				<option value="23">Bundi</option>
+				<option value="29">Chittorgarh</option>
+				<option value="4">Churu</option>
+				<option value="11">Dausa</option>
+				<option value="8">Dholpur</option>
+				<option value="27">Dungarpur</option>
+				<option value="2">Hanumangarh</option>
+				<option value="12">Jaipur</option>
+				<option value="16">Jaisalmer</option>
+				<option value="18">Jalore</option>
+				<option value="32">Jhalawar</option>
+				<option value="5">Jhunjhunu</option>
+				<option value="15">Jodhpur</option>
+				<option value="9">Karauli</option>
+				<option value="30">Kota</option>
+				<option value="14">Nagaur</option>
+				<option value="20">Pali</option>
+				<option value="33">Pratapgarh</option>
+				<option value="25">Rajsamand</option>
+				<option value="10">Sawai Madhopur</option>
+				<option value="13">Sikar</option>
+				<option value="19">Sirohi</option>
+				<option value="1">Sri Ganganagar</option>
+				<option value="34">Test</option>
+				<option value="22">Tonk</option>
+				<option value="26">Udaipur</option>
+			</select>
+			<input class="button01" onclick="javascript:directTo();" value="Go" type="button" name="direct">
+		</div>
+		<div class="botcurve"></div>
+		<div class="clear"></div>
+		<div>Download <b>e-Mitra</b> Mobile App From Here<br>
+			<a href="https://play.google.com/store/apps/details?id=in.gov.semt.rajeev.emitrapayment"><img alt="Get it on Google Play" src="./e-Mitra_files/en_generic_rgb_wo_45.png" width="150" height="50"></a><br>
+		    <a href="http://www.windowsphone.com/en-us/store/app/emitra/d04e9203-e081-4cc1-9d8f-50e179ae26d4"><img alt="Get it on Windows Phone Store" src="./e-Mitra_files/logo_filename.png" width="150" height="40"></a>
+		</div>
+		<!-- 
+		<DIV class=topcurve1></DIV>
+		<DIV class=homeGrayBox>
+		    <DIV class=h2gray>Available Services</DIV>
+		    <DIV class=txtgray>View all Services currently available in eMitra</DIV>
+		    <DIV class=space></DIV>
+			<DIV>
+				<TABLE>
+					<TBODY>
+						<TR>
+							<TD>
+								<SELECT name="service" id=service style="WIDTH: 115px" onchange=javascript:viewService();>
+									<OPTION selected value=-1>View Services</OPTION>
+									<OPTION value=1>Application</OPTION>
+									<OPTION value=2>Grievances</OPTION>
+									<OPTION value=3>Demand Bills</OPTION>
+								</SELECT>
+							</TD>
+						</TR>
+					</TBODY>
+				</TABLE>
+			</DIV>
+		</DIV>
+		<DIV class=botcurve></DIV>
+		<DIV class=clear></DIV>
+		<div style="margin-top:8px">
+			<a href="http://ewf.eletsonline.com/voting" title="Vote for best e-gov website" target="_blank">
+				<img src="images/vote2.png" border="0">
+			</a><br>
+			<a href="http://india.gov.in" title="Extrernal website opens in a new window" target="_blank">
+				<img src="images/nat-portal.png" border="0">
+			</a>
+		</div>
+		 -->
+	</div>
+
+
+	
+			</div>
+		</div>
+		<div class="clear"></div>
+		
+
+   
+       <link rel="stylesheet" href="./e-Mitra_files/master.css">
+   <script language="JavaScript">
+   function openAboutUsCtz(link){
+   window.open(link,"_media","width=600,scrollbars=yes");
+   }
+  function openFAQCtz(link){
+   window.open(link,"_media","width=600,scrollbars=yes");
+   }
+  function openContactUsCtz(link){
+   window.open(link,"_media","height=300,width=450,scrollbars=yes");
+   }
+  function openFeedBackCtz(link){
+   window.open(link,"_media","height=400,width=550,scrollbars=yes");
+   } 
+  function openMindtreeCns(link){
+   window.open(link,"_media");
+  }
+  function openDoit(link){
+   window.open(link,"_media");
+  }
+  </script>  
+  
+ 
+	<div id="footer">
+         <div class="footercontent">
+         <a href="javascript:openAboutUsCtz(&#39;AboutUs.jsp&#39;)">About us</a> | 
+         <a href="javascript:openFAQCtz(&#39;FAQ_UC.jsp&#39;)">FAQ's</a> | 
+         <a href="javascript:openContactUsCtz(&#39;ContactUs.jsp&#39;);">Contact Us </a> | 
+         <a href="javascript:openFeedBackCtz(&#39;sendmail.jsp&#39;);">Feedback</a> | 
+         <a href="http://emitra.gov.in/home.jsp#" onclick="discl();">Disclaimer. </a>
+         <br>Best viewed at 1024*768 resolution on Internet Explorer
+         <br>@ 2007 Designed and developed by 
+         <a href="javascript:openDoit(&#39;http://www.mindtree.com/&#39;);" title="External website opens in a new window">
+         	MindTree Ltd.
+         </a> &amp; 
+         <a href="javascript:openMindtreeCns(&#39;http://www.doitc.rajasthan.gov.in/&#39;);" title="External website opens in a new window">
+         	DoIT &amp; C-Rajasthan
+         </a> 
+	</div>
+	</div>
+
+
+
+	</div>
+
+
+
+
+</body></html>
